@@ -55,7 +55,7 @@
 #home-section::before{
     content: "";
     position: absolute;
-    background: url('images/world.jpg');
+    background: url('../img/background-world1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
