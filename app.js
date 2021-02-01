@@ -2,7 +2,11 @@
 const express = require('express')
 const mongoose = require('mongoose')
 
+// getting country router
 const countryRouter =require('./routers/country')
+//getting country model
+const Country = require('./models/countryM')
+
 
 //aquiring express function 
 const app= express()
