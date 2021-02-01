@@ -23,13 +23,13 @@ router.use(bodyParser.urlencoded({extended:true}))
 
 router.get('/',(req,res)=>{
     let countryName=req.query.name;
-    Country.find({name: countryName},(err,countryData)=>{
+    Country.findOne({name: countryName},(err,countryData)=>{
         if(err){
             console.log(err);
         }
         console.log(countryData);
+        res.render('country-home',{countryData});
     });
-    res.render('country-home');
 })
 
 
