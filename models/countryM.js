@@ -9,7 +9,6 @@ const countrySchema =mongoose.Schema({
     },
     code:{
         type: String,
-        required: true
     }
 })
 
