@@ -21,6 +21,7 @@ mongoose.connect(DBurl,{useNewUrlParser:true})
 app.set('view engine','ejs')
 
 //
+app.use(express.urlencoded({extended:false}))
 app.use(express.static('public'))
 app.use('/css',express.static(__dirname+'public/css'))
 app.use('/img',express.static(__dirname+'public/img'))
