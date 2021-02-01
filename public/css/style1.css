@@ -45,10 +45,10 @@
 
 /* Home section */
 #home-section{
-
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 500px;
     padding: 20px 20px;
 }
@@ -67,6 +67,10 @@
     opacity: 90%;
 } 
 #main-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
     padding: 10px 20px;
     font-size: 4.5rem;
     text-align: center;
@@ -74,18 +78,39 @@
     font-family: 'Black Ops One', cursive;
 }
 #search-container{
-    margin: 10px 50px;
-    padding: 8px 250px;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    width: 60%;
+    height: 50px;
+    margin: 10px 10px;
+    padding: 3px 3px;
+}
+#search-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    
 }
 #search-box{
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 20px;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 1.5rem;
+    height: 80%;
+    margin: 3px;
+    font-size: 1.3rem;
 }
-
+#search-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 80%;
+    margin: 3px;
+    font-size: 1.2rem;
+}
 /* Countries-section */
 
 #countries-section{

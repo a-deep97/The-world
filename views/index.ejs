@@ -26,13 +26,13 @@
     <section id="home-section">
         <h1 id="main-heading">Welcome to countries</h1>
         <div id="search-container">
-            <input type="text" id="search-box" name="search-text-area" placeholder="Search countries">
+            <%- include('./partials/_search_bar.ejs') %> 
         </div>
     </section>
     <section id="countries-section">
         <div id="country-table">
             <div class="row">
-                <div class="column" id="afghanistan-col" onclick="location.href='country-home.html';">
+                <div class="column" id="afghanistan-col" onclick="location.href='country-home.ejs';">
                     <p>Lorem ipsum dolor</p>
                 </div>
                 <div class="column" id="albania-col" onclick="location.href='country-home.html';">

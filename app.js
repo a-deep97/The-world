@@ -2,6 +2,8 @@
 const express = require('express')
 const mongoose = require('mongoose')
 
+const countryRouter =require('./routers/country')
+
 //aquiring express function 
 const app= express()
 
@@ -19,6 +21,7 @@ app.use(express.static('public'))
 app.use('/css',express.static(__dirname+'public/css'))
 app.use('/img',express.static(__dirname+'public/img'))
 
+
 //checking connection validity
 const db= mongoose.connection
 db.once('open',()=>{
@@ -30,8 +33,8 @@ app.get('/',(req,res)=>{
 
     res.render('index');
 })
-
-
+//use method for country router 
+app.use('/country',countryRouter)
 
 // app listening to port 3000
 app.listen(3000);
