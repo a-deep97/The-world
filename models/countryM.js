@@ -14,6 +14,9 @@ const countrySchema =mongoose.Schema({
     capital_city:{
         type: String
     },
+    currency:{
+        type: String
+    },
     largest_city:{
         type:String
     },

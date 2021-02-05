@@ -121,9 +121,20 @@
     text-align: center;
 }
 #description-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: blue;
     height: 150px;
     margin: 3px;
+    padding: 5px;
+}
+#description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    padding: 5px 5px;
 }
 #fact-container1{
     display: flex;
