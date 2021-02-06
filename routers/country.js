@@ -32,10 +32,6 @@ router.get('/',(req,res)=>{
     });
 })
 
-router.post('/edit',(req,res)=>{
-    res.send('edit router');
-})
-
 
 
 module.exports = router;

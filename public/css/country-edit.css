@@ -1,0 +1,219 @@
+
+
+
+
+/* Navigation bar section */
+#navbar{
+    display: flex;
+    top: 0%;
+    left: 0%;
+    align-items: center;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 80px;
+    width: 100%;
+    opacity: 50%;
+    z-index: -1;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 0px 0px;
+}
+#navbar ul li a{
+    display: block;
+    font-size: 1.6rem;
+    padding: 10px 40px;
+    text-decoration: none;
+    color:  white;
+    font-family: 'Black Ops One', cursive;
+}
+#navbar ul li a:hover{
+    display: block;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+
+/* Main section */
+
+#main-section{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    flex-direction: column;
+}
+#intro-section{
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+}
+#heading{
+    display: flex;
+    width: 100%;
+}
+#edit{
+    display:  flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+#edit button{
+    margin: 2px;
+}
+#main-container{
+    display: flex;
+    flex-direction: row;
+    background-color: burlywood;
+    height: 1000px;
+}
+#left-aside{
+    background-color: darkorange;
+}
+#main-article{
+    background-color: springgreen;
+    width: 300%;
+    padding: 10px 20px;
+}
+#topic{
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+}
+#name-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 3px 3px;
+    background-color: tomato;
+    padding: 0px 10px;
+}
+#primary-name-container{
+    width: 100%;
+    margin: 3px 3px;
+    background-color: cadetblue;
+    padding: 0px 0px;
+}
+#primary-name{
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px 10px;
+}
+#official-name-container{
+    width: 100%;
+    font-size: 1.6rem;
+    margin: 3px 3px;
+    background-color: cadetblue;
+}
+#official-name{
+    text-align: center;
+    padding: 5px 10px;
+}   
+#symbol-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 3px 3px;
+    background-color: tomato;
+}
+#flag-container{
+    width: 100%;
+    margin: 3px 3px;
+    background-color: cadetblue;
+    text-align: center;
+}
+#emblem-container{
+    width: 100%;
+    margin: 3px 3px;
+    background-color: cadetblue;
+    text-align: center;
+}
+#description-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    height: 150px;
+    margin: 3px;
+    padding: 5px;
+}
+#description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    padding: 5px 5px;
+}
+#fact-container1{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    margin: 3px;
+    background-color: blue;
+}
+.sub-fact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#sub-fact-cont1{
+    width: 100%;
+    margin: 3px;
+    background-color: tomato;
+}
+#sub-fact-cont2{
+    width: 100%;
+    margin: 3px;
+    background-color: tomato;
+}
+
+#fact-container2{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    margin: 3px;
+    background-color: blue;
+}
+#sub-fact-cont3{
+    width: 100%;
+    margin: 3px;
+    background-color: tomato;
+}
+.facts{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.fact-label{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    margin: 2px;
+    background-color: yellow; 
+}
+.fact-value{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: yellow;
+    margin: 2px;
+
+}
+#right-aside{
+    background-color: yellowgreen;
+}
+
+/* Footer */
