@@ -32,6 +32,10 @@ router.get('/',(req,res)=>{
     });
 })
 
-
+router.get('/:id/edit',(req,res)=>{
+    Country.findById({"_id":req.params.id},(err,countryData)=>{
+        res.render('country-edit',{countryData});
+    });
+})
 
 module.exports = router;
