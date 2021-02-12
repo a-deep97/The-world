@@ -8,28 +8,11 @@
     <link rel="stylesheet" href="/css/country-edit.css">
 </head>
 <body>
-    <nav id="navbar">
-        <ul>
-            <li class="nav-items">
-                <a href="index.ejs">Home</a>
-            </li>
-            <li class="nav-items">
-                <a href="">Quiz</a>
-            </li>
-            <li class="nav-items">
-                <a href=""></a>
-            </li>
-        </ul>
-    </nav>
+    <%- include('./partials/_navbar') %>
     <section id="main-section">
         <div id="intro-section">
             <div id="heading">
                 <h2>The World</h2>
-            </div>
-            <div id="edit">
-                <form action="/country/<%= countryData.name %>?_method=PUT" method="POST">
-                    <button type="submit">update</button>
-                </form>
             </div>  
         </div>
         <div id="main-container">
@@ -37,7 +20,8 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ad unde tenetur veritatis dicta nulla autem nihil voluptate quidem consequatur necessitatibus, beatae fugiat sed impedit aspernatur illo, eum rem culpa quisquam expedita! Impedit, expedita.
             </aside>
             <article id="main-article">
-                <div id="topic">
+                
+                <!-- <div id="topic">
                     <div id="name-container">
                         <div id="primary-name-container"> 
                             <div id="primary-name" contenteditable="true"><%= countryData.name %> </div>
@@ -148,7 +132,7 @@
                         </div>
                     </div>
                 </div>
-            </article>
+            </article> -->
             <aside id="right-aside">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque maiores porro, recusandae perspiciatis veniam eveniet magnam illo odio dolores consequatur eius, pariatur aperiam quod, expedita excepturi laborum alias id. Explicabo.
             </aside>
