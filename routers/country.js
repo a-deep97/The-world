@@ -32,10 +32,36 @@ router.get('/',(req,res)=>{
     });
 })
 
-router.get('/:id/edit',(req,res)=>{
-    Country.findById({"_id":req.params.id},(err,countryData)=>{
-        res.render('country-edit',{countryData});
+router.get('/:name/edit',async (req,res)=>{
+    
+    try{
+        const countryData = await Country.findOne({"name":req.params.name});
+        res.render('country-edit',{countryData:countryData});
+
+    }catch(e){
+        res.redirect('country/:name');
+    }
+    
+})
+router.put('/:name',async (req,res)=>{
+    console.log(req.body);
+    res.redirect('/');
+    /*
+    const country =  new Country({
+        name: req.body.name
     });
+    try{
+        country = await Country.findById(req.params.id);
+        await country.save();
+        console.log(country);
+        res.redirect('/${country.id}');
+    }catch{
+        res.render('/${country.id}',{
+            country: country,
+            errorMessage: 'error updating'
+        })
+    }
+    */
 })
 
 module.exports = router;

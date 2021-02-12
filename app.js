@@ -1,6 +1,7 @@
 // Installing libraries
 const express = require('express')
 const mongoose = require('mongoose')
+const methodOverride = require('method-override')
 
 // getting country router
 const countryRouter =require('./routers/country')
@@ -23,7 +24,7 @@ app.use(express.urlencoded({extended:false}))
 app.use(express.static('public'))
 app.use('/css',express.static(__dirname+'public/css'))
 app.use('/img',express.static(__dirname+'public/img'))
-
+app.use(methodOverride('_method'))
 /*
 //checking connection validity
 const db= mongoose.connection
