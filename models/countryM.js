@@ -2,8 +2,8 @@ const mongoose = require('mongoose')
 
 
 //schema
-const countrySchema =mongoose.Schema({
-    _id:mongoose.Schema.Types.ObjectId,
+const countrySchema = mongoose.Schema({
+    //_id:mongoose.Schema.Types.ObjectId,
     name:{
         type: String,
     },
@@ -11,9 +11,6 @@ const countrySchema =mongoose.Schema({
         type: String,
     },
     capital_city:{
-        type: String
-    },
-    currency:{
         type: String
     },
     largest_city:{
@@ -51,6 +48,9 @@ const countrySchema =mongoose.Schema({
     },
     official_name:{
         type:String
+    },
+    currency:{
+        type: String
     }
 })
 

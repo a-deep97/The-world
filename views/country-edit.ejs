@@ -20,7 +20,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ad unde tenetur veritatis dicta nulla autem nihil voluptate quidem consequatur necessitatibus, beatae fugiat sed impedit aspernatur illo, eum rem culpa quisquam expedita! Impedit, expedita.
             </aside>
             <article id="main-article">
-                <form action="/countries/<%= countryData.name %>?_method=PUT" method="POST">
+                <form action="/country/<%= countryData.id %>?_method=PUT" method="POST">
                     <%- include('./partials/_edit-form') %> 
                     <button type="submit">Update</button> 
                 </form>

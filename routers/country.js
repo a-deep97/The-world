@@ -6,18 +6,6 @@ const mongoose = require('mongoose')
 //getting country model
 const Country = require('../models/countryM')
 
-// database path url
-const DBurl='mongodb://127.0.0.1:27017/the_world'
-
-//connected to database
-mongoose.connect(DBurl,{useNewUrlParser:true})
-//checking connection validity
-const db= mongoose.connection
-db.once('open',()=>{
-    console.log('data base connected:',DBurl);
-})
-
-
 
 router.use(bodyParser.urlencoded({extended:true}))
 
@@ -27,7 +15,7 @@ router.get('/',(req,res)=>{
         if(err){
             console.log(err);
         }
-        console.log(countryData);
+      //  console.log(countryData);
         res.render('country-home',{countryData});
     });
 })
@@ -35,33 +23,48 @@ router.get('/',(req,res)=>{
 router.get('/:name/edit',async (req,res)=>{
     
     try{
-        const countryData = await Country.findOne({"name":req.params.name});
+        Country.findOne({"name":req.params.name},(err,countryData)=>{
         res.render('country-edit',{countryData:countryData});
-
+        });
     }catch(e){
-        res.redirect('country/:name');
+        res.redirect('/');
     }
     
 })
-router.put('/:name',async (req,res)=>{
-    console.log(req.body);
-    res.redirect('/');
-    /*
-    const country =  new Country({
-        name: req.body.name
-    });
+router.put('/:id',async (req,res)=>{
+    
     try{
-        country = await Country.findById(req.params.id);
-        await country.save();
-        console.log(country);
-        res.redirect('/${country.id}');
-    }catch{
-        res.render('/${country.id}',{
-            country: country,
-            errorMessage: 'error updating'
-        })
+        Country.findById(req.params.id,(err,countryData)=>{
+            if(err){
+                console.log(err);
+            }
+            else{
+                console.log(countryData);
+            }
+            res.redirect('/');
+        });
+    }catch(e){
+        res.redirect('/');
     }
-    */
 })
 
 module.exports = router;
+
+
+
+/*
+        country.capital_city=data.capital_city;
+        country.largest_city=data.largest_city;
+        country.total_area=data.total_area;
+        country.land_Area=data.land_area;
+        country.population=data.population;
+        country.currency=data.currency;
+        country.motto=data.motto;
+        country.national_anthem=data.national_anthem;
+        country.president=data.president;
+        country.prime_minister=data.minister;
+        country.supreme_leader=data.supreme_leader;
+        country.time_zone=data.time_zone;
+        country.description=data.description;
+        country.official_name=data.official_name;
+        */
