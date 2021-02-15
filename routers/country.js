@@ -15,7 +15,7 @@ router.get('/',(req,res)=>{
         if(err){
             console.log(err);
         }
-      //  console.log(countryData);
+        console.log(countryData);
         res.render('country-home',{countryData});
     });
 })
@@ -36,10 +36,25 @@ router.get('/:id/edit',async (req,res)=>{
 router.put('/:id',async (req,res)=>{
     
     let countryData;
+    let data=req.body;
     try{
         countryData = await Country.findById(req.params.id);
-        console.log(countryData);
         //update data
+        countryData.name=data.primary_name;
+        countryData.capital_city=data.capital_city;
+        countryData.largest_city=data.largest_city;
+        countryData.total_area=data.total_area;
+        countryData.land_Area=data.land_area;
+        countryData.population=data.population;
+        countryData.motto=data.motto;
+        countryData.national_anthem=data.national_anthem;
+        countryData.president=data.president;
+        countryData.prime_minister=data.minister;
+        countryData.supreme_leader=data.supreme_leader;
+        countryData.time_zone=data.time_zone;
+        countryData.description=data.description;
+        countryData.official_name=data.official_name;
+        countryData.currency=data.currency;
         //
         await countryData.save();
         res.redirect('/');
