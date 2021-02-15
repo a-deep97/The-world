@@ -20,10 +20,12 @@ router.get('/',(req,res)=>{
     });
 })
 
-router.get('/:name/edit',async (req,res)=>{
+router.get('/:id/edit',async (req,res)=>{
     
     try{
-        Country.findOne({"name":req.params.name},(err,countryData)=>{
+        console.log(req.params.id)
+        Country.findById(req.params.id,(err,countryData)=>{
+            console.log(countryData);
         res.render('country-edit',{countryData:countryData});
         });
     }catch(e){
@@ -33,19 +35,37 @@ router.get('/:name/edit',async (req,res)=>{
 })
 router.put('/:id',async (req,res)=>{
     
+    let countryData;
     try{
-        Country.findById(req.params.id,(err,countryData)=>{
+        countryData = await Country.findById(req.params.id);
+        console.log(countryData);
+        //update data
+        //
+        await countryData.save();
+        res.redirect('/');
+    }catch(e){
+        res.redirect('/');
+    }
+    /*
+    try{
+        console.log(req.params.id);
+        Country.findById(req.params.id,async (err,countryData)=>{
             if(err){
                 console.log(err);
             }
             else{
-                console.log(countryData);
+                countryData.name="India";
+                await countryData.save();
             }
+            Country.findById(req.params.id,(err,data)=>{
+                console.log(data);
+            })
             res.redirect('/');
         });
     }catch(e){
         res.redirect('/');
     }
+    */
 })
 
 module.exports = router;
