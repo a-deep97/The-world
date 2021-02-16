@@ -4,6 +4,7 @@ const router = express.Router();
 const mongoose = require('mongoose')
 
 const utilities = require('../public/js/utilities')
+const validateSearch=require('../public/js/validate-search')
 //getting country model
 const Country = require('../models/countryM')
 
@@ -12,12 +13,17 @@ router.use(bodyParser.urlencoded({extended:true}))
 
 router.get('/',(req,res)=>{
     let countryName=req.query.name;
-    Country.findOne({name: countryName},(err,countryData)=>{
-        if(err){
-            console.log(err);
-        }
-        res.render('country-home',{countryData});
-    });
+    if(validateSearch.isValidCountry(countryName)){
+        Country.findOne({name: countryName},(err,countryData)=>{
+            if(err){
+                console.log(err);
+            }
+            res.render('country-home',{countryData});
+        });
+    }
+    else{
+        res.redirect('/');
+    }
 })
 
 router.get('/:id/edit',async (req,res)=>{
