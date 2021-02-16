@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 const router = express.Router();
 const mongoose = require('mongoose')
 
+const utilities = require('../public/js/utilities')
 //getting country model
 const Country = require('../models/countryM')
 
@@ -15,7 +16,6 @@ router.get('/',(req,res)=>{
         if(err){
             console.log(err);
         }
-        console.log(countryData);
         res.render('country-home',{countryData});
     });
 })
@@ -40,21 +40,21 @@ router.put('/:id',async (req,res)=>{
     try{
         countryData = await Country.findById(req.params.id);
         //update data
-        countryData.name=data.primary_name;
-        countryData.capital_city=data.capital_city;
-        countryData.largest_city=data.largest_city;
-        countryData.total_area=data.total_area;
-        countryData.land_Area=data.land_area;
-        countryData.population=data.population;
-        countryData.motto=data.motto;
-        countryData.national_anthem=data.national_anthem;
-        countryData.president=data.president;
-        countryData.prime_minister=data.minister;
-        countryData.supreme_leader=data.supreme_leader;
-        countryData.time_zone=data.time_zone;
-        countryData.description=data.description;
-        countryData.official_name=data.official_name;
-        countryData.currency=data.currency;
+        countryData.name=utilities.removeExtraSpaces(data.primary_name);
+        countryData.capital_city=utilities.removeExtraSpaces(data.capital_city);
+        countryData.largest_city=utilities.removeExtraSpaces(data.largest_city);
+        countryData.total_area=utilities.removeExtraSpaces(data.total_area);
+        countryData.land_Area=utilities.removeExtraSpaces(data.land_area);
+        countryData.population=utilities.removeExtraSpaces(data.population);
+        countryData.motto=utilities.removeExtraSpaces(data.motto);
+        countryData.national_anthem=utilities.removeExtraSpaces(data.national_anthem);
+        countryData.president=utilities.removeExtraSpaces(data.president);
+        countryData.prime_minister=utilities.removeExtraSpaces(data.minister);
+        countryData.supreme_leader=utilities.removeExtraSpaces(data.supreme_leader);
+        countryData.time_zone=utilities.removeExtraSpaces(data.time_zone);
+        countryData.description=utilities.removeExtraSpaces(data.description);
+        countryData.official_name=utilities.removeExtraSpaces(data.official_name);
+        countryData.currency=utilities.removeExtraSpaces(data.currency);
         //
         await countryData.save();
         res.redirect('/');
