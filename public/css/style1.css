@@ -1,5 +1,6 @@
 
-
+:root{
+}
 
 /* Navigation bar section */
 #navbar{
@@ -35,6 +36,7 @@
     justify-content: center;
     align-items: center;
     font-size: 2.2rem;
+    font-family: 'Black Ops One', cursive;
     color: white;
     width: 50%;
     height: 100%;
@@ -84,7 +86,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 550px;
     padding: 20px 20px;
 }
 #home-section::before{
@@ -100,7 +102,7 @@
     z-index: -1;
     top: 0%;
     left: 0%;
-    height: 630px;
+    height: 680px;
     width: 100%;
     opacity: 90%;
 } 
@@ -109,7 +111,8 @@
     justify-content: center;
     align-items: center;
     width: 60%;
-    padding: 10px 20px;
+    height: 30%;
+    margin: 30px;
     font-size: 4.5rem;
     text-align: center;
     color: white;
@@ -120,7 +123,7 @@
     justify-content: center;
     align-items: center;
     width: 60%;
-    height: 50px;
+    height: 10%;
     margin: 10px 10px;
     padding: 3px 3px;
 }
