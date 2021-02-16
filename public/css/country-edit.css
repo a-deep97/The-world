@@ -110,11 +110,13 @@
     height: 1000px;
 }
 #left-aside{
+    display: flex;
+    width: 20%;
     background-color: darkorange;
 }
 #main-article{
     background-color: springgreen;
-    width: 300%;
+    width: 100%;
     padding: 10px 20px;
 }
 #topic{
@@ -248,6 +250,8 @@
 
 }
 #right-aside{
+    display: flex;
+    width: 10%;
     background-color: yellowgreen;
 }
 
