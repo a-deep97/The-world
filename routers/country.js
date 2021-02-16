@@ -13,6 +13,9 @@ router.use(bodyParser.urlencoded({extended:true}))
 
 router.get('/',(req,res)=>{
     let countryName=req.query.name;
+    if(countryName==null){
+        countryName=req.params.id;
+    }
     if(validateSearch.isValidCountry(countryName)){
         Country.findOne({name: countryName},(err,countryData)=>{
             if(err){
