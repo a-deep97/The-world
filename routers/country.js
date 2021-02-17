@@ -56,12 +56,13 @@ router.put('/:id',async (req,res)=>{
         countryData.motto=utilities.removeExtraSpaces(data.motto);
         countryData.national_anthem=utilities.removeExtraSpaces(data.national_anthem);
         countryData.president=utilities.removeExtraSpaces(data.president);
-        countryData.prime_minister=utilities.removeExtraSpaces(data.minister);
+        countryData.prime_minister=utilities.removeExtraSpaces(data.prime_minister);
         countryData.supreme_leader=utilities.removeExtraSpaces(data.supreme_leader);
         countryData.time_zone=utilities.removeExtraSpaces(data.time_zone);
         countryData.description=utilities.removeExtraSpaces(data.description);
         countryData.official_name=utilities.removeExtraSpaces(data.official_name);
         countryData.currency=utilities.removeExtraSpaces(data.currency);
+    
         //
         await countryData.save();
         res.redirect('/');
