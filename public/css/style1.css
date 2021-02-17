@@ -179,16 +179,20 @@
     padding: 0px 0px;
 }
 .column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 2px 2px;
     border: 1px solid black;
     text-align: center;
 }
-.column p{
-    padding: 0px 0px;
+.column img{
+    max-width: 100%;
+    max-height: 100%;
 }
 .column:hover{
-    background-color: lime;
+    /* background-color: lime; */
     cursor: pointer;
     width: 120%;
 }
