@@ -65,7 +65,7 @@ router.put('/:id',async (req,res)=>{
     
         //
         await countryData.save();
-        res.redirect('/');
+        res.redirect('/country?name='+countryData.name);
     }catch(e){
         res.redirect('/');
     }
