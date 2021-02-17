@@ -34,8 +34,7 @@ router.get('/:id/edit',async (req,res)=>{
     try{
         console.log(req.params.id)
         Country.findById(req.params.id,(err,countryData)=>{
-            console.log(countryData);
-        res.render('country-edit',{countryData:countryData});
+            res.render('country-edit',{countryData:countryData});
         });
     }catch(e){
         res.redirect('/');
@@ -49,11 +48,10 @@ router.put('/:id',async (req,res)=>{
     try{
         countryData = await Country.findById(req.params.id);
         //update data
-        countryData.name=utilities.removeExtraSpaces(data.primary_name);
         countryData.capital_city=utilities.removeExtraSpaces(data.capital_city);
         countryData.largest_city=utilities.removeExtraSpaces(data.largest_city);
         countryData.total_area=utilities.removeExtraSpaces(data.total_area);
-        countryData.land_Area=utilities.removeExtraSpaces(data.land_area);
+        countryData.land_area=utilities.removeExtraSpaces(data.land_area);
         countryData.population=utilities.removeExtraSpaces(data.population);
         countryData.motto=utilities.removeExtraSpaces(data.motto);
         countryData.national_anthem=utilities.removeExtraSpaces(data.national_anthem);
