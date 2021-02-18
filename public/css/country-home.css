@@ -1,6 +1,9 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
+:root{
+    --font1 : 'Roboto', sans-serif;
+}
 
 /* Navigation bar section */
 #navbar{
@@ -35,6 +38,7 @@
     justify-content: center;
     align-items: center;
     font-size: 2.2rem;
+    font-family: var(--font1);
     width: 50%;
     height: 100%;
 }
@@ -154,6 +158,7 @@
 #primary-name{
     text-align: center;
     font-size: 3rem;
+    font-family: var(--font1);
     padding: 10px 10px;
 }
 #official-name-container{
@@ -165,6 +170,7 @@
 #official-name{
     text-align: center;
     padding: 5px 10px;
+    font-family: var(--font1);
 }   
 #symbol-container{
     display: flex;
@@ -202,6 +208,7 @@
     padding: 3px 3px;
     background-color: yellow;
     padding: 5px 5px;
+    font-family: var(--font1);
 }
 #fact-container1{
     display: flex;
@@ -209,6 +216,7 @@
     height: 300px;
     margin: 3px;
     background-color: blue;
+    font-family: var(--font1);
 }
 .sub-fact-container{
     display: flex;
