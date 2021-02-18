@@ -131,7 +131,7 @@ body{
     display: flex;
     flex-direction: row;
     /* background-color: burlywood; */
-    height: 1000px;
+    height: 750px;
 }
 #left-aside{
     display: flex;
@@ -141,7 +141,7 @@ body{
 #main-article{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     /* background-color: springgreen; */
     /* background-color: white; */
     width: 100%;
@@ -243,7 +243,7 @@ body{
 #fact-container1{
     display: flex;
     flex-direction: row;
-    height: 300px;
+    height: 200px;
     margin: 3px;
     /* background-color: blue; */
     background-color: rgba(0, 0, 0, 0.5);
@@ -272,7 +272,7 @@ body{
 #fact-container2{
     display: flex;
     justify-content: center;
-    height: 300px;
+    height: 200px;
     margin: 3px;
     /* background-color: blue; */
     background-color: black;
@@ -294,7 +294,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1rem;
     margin: 2px;
     /* background-color: yellow;  */
     background-color: rgba(0, 0, 0, 0.5);
@@ -305,7 +305,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     /* background-color: yellow; */
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
