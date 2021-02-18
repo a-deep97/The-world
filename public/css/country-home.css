@@ -6,6 +6,12 @@
     --font1 : 'Roboto', sans-serif;
     --font2 : 'Black Ops One', cursive;
 }
+body{
+    background: url('../img/background-world2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* Navigation bar section */
 #navbar{
@@ -124,7 +130,7 @@
 #main-container{
     display: flex;
     flex-direction: row;
-    background-color: burlywood;
+    /* background-color: burlywood; */
     height: 1000px;
 }
 #left-aside{
@@ -137,14 +143,14 @@
     flex-direction: column;
     justify-content: center;
     /* background-color: springgreen; */
-    background-color: white;
+    /* background-color: white; */
     width: 100%;
     padding: 10px 20px;
 }
 
 #topic{
     /* background-color: blue; */
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: row;
     height: 150px;
@@ -156,7 +162,7 @@
     flex-direction: column;
     margin: 3px 3px;
     /* background-color: tomato; */
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: solid white 2px;
     border-radius: 10px;
@@ -166,7 +172,7 @@
     width: 100%;
     margin: 3px 3px;
     /* background-color: cadetblue; */
-    background-color: black;
+    /* background-color: black; */
     padding: 0px 0px;
 }
 #primary-name{
@@ -180,7 +186,7 @@
     font-size: 1.6rem;
     margin: 3px 3px;
     /* background-color: cadetblue; */
-    background-color: black;
+    /* background-color: black; */
 }
 #official-name{
     text-align: center;
@@ -193,20 +199,20 @@
     width: 100%;
     margin: 3px 3px;
     /* background-color: tomato; */
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 #flag-container{
     width: 100%;
     margin: 3px 3px;
     /* background-color: cadetblue; */
-    background-color: black;
+    /* background-color: black; */
     text-align: center;
 }
 #emblem-container{
     width: 100%;
     margin: 3px 3px;
     /* background-color: cadetblue; */
-    background-color: black;
+    /* background-color: black; */
     text-align: center;
 }
 #description-container{
@@ -215,7 +221,7 @@
     justify-content: center;
     align-items: center;
     /* background-color: blue; */
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     height: 150px;
     margin: 3px;
     padding: 5px;
@@ -227,7 +233,7 @@
     height: 98%;
     padding: 3px 3px;
     /* background-color: yellow; */
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: solid white 2px;
     border-radius: 10px;
@@ -240,7 +246,7 @@
     height: 300px;
     margin: 3px;
     /* background-color: blue; */
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     font-family: var(--font1);
 }
 .sub-fact-container{
@@ -252,14 +258,14 @@
     width: 100%;
     margin: 3px;
     /* background-color: tomato; */
-    background-color: black;
+    /* background-color: rgba(0, 0, 0, 0.5); */
     border: solid white 2px;
 }
 #sub-fact-cont2{
     width: 100%;
     margin: 3px;
     /* background-color: tomato; */
-    background-color: black;
+    /* background-color: rgba(0, 0, 0, 0.5); */
     border: solid white 2px;
 }
 
@@ -291,7 +297,7 @@
     font-size: 1.8rem;
     margin: 2px;
     /* background-color: yellow;  */
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
 }
 .fact-value{
@@ -301,7 +307,7 @@
     align-items: center;
     font-size: 1.5rem;
     /* background-color: yellow; */
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     margin: 2px;
 
