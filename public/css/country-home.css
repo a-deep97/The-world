@@ -277,13 +277,15 @@ body{
     height: 200px;
     margin: 3px;
     /* background-color: blue; */
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: var(--font1);
 }
 #sub-fact-cont3{
     width: 100%;
     margin: 3px;
     /* background-color: tomato; */
-    background-color: black;
+    /* background-color: black; */
+    border: solid 2px white;
 }
 .facts{
     width: 100%;
