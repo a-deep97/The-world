@@ -144,6 +144,7 @@
     display: flex;
     flex-direction: row;
     height: 150px;
+    border-radius: 10px;
 }
 #name-container{
     display: flex;
@@ -152,13 +153,16 @@
     margin: 3px 3px;
     /* background-color: tomato; */
     background-color: black;
+    color: white;
+    border: solid white 2px;
+    border-radius: 10px;
     padding: 0px 10px;
 }
 #primary-name-container{
     width: 100%;
     margin: 3px 3px;
     /* background-color: cadetblue; */
-    background-color: white;
+    background-color: black;
     padding: 0px 0px;
 }
 #primary-name{
@@ -172,7 +176,7 @@
     font-size: 1.6rem;
     margin: 3px 3px;
     /* background-color: cadetblue; */
-    background-color: white;
+    background-color: black;
 }
 #official-name{
     text-align: center;
@@ -191,14 +195,14 @@
     width: 100%;
     margin: 3px 3px;
     /* background-color: cadetblue; */
-    background-color: white;
+    background-color: black;
     text-align: center;
 }
 #emblem-container{
     width: 100%;
     margin: 3px 3px;
     /* background-color: cadetblue; */
-    background-color: white;
+    background-color: black;
     text-align: center;
 }
 #description-container{
@@ -211,6 +215,7 @@
     height: 150px;
     margin: 3px;
     padding: 5px;
+    border-radius: 10px;
 }
 #description{
     display: flex;
@@ -218,8 +223,11 @@
     height: 98%;
     padding: 3px 3px;
     /* background-color: yellow; */
-    background-color: white;
-    padding: 5px 5px;
+    background-color: black;
+    color: white;
+    border: solid white 2px;
+    border-radius: 10px;
+    padding: 10px 10px;
     font-family: var(--font1);
 }
 #fact-container1{
@@ -241,12 +249,14 @@
     margin: 3px;
     /* background-color: tomato; */
     background-color: black;
+    border: solid white 2px;
 }
 #sub-fact-cont2{
     width: 100%;
     margin: 3px;
     /* background-color: tomato; */
     background-color: black;
+    border: solid white 2px;
 }
 
 #fact-container2{
@@ -277,7 +287,8 @@
     font-size: 1.8rem;
     margin: 2px;
     /* background-color: yellow;  */
-    background-color: white;
+    background-color: black;
+    color: white;
 }
 .fact-value{
     width: 100%;
@@ -286,7 +297,8 @@
     align-items: center;
     font-size: 1.5rem;
     /* background-color: yellow; */
-    background-color: white;
+    background-color: black;
+    color: white;
     margin: 2px;
 
 }
