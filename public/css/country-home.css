@@ -139,7 +139,8 @@
 }
 
 #topic{
-    background-color: blue;
+    /* background-color: blue; */
+    background-color: black;
     display: flex;
     flex-direction: row;
     height: 150px;
@@ -149,13 +150,15 @@
     width: 100%;
     flex-direction: column;
     margin: 3px 3px;
-    background-color: tomato;
+    /* background-color: tomato; */
+    background-color: black;
     padding: 0px 10px;
 }
 #primary-name-container{
     width: 100%;
     margin: 3px 3px;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    background-color: white;
     padding: 0px 0px;
 }
 #primary-name{
@@ -168,7 +171,8 @@
     width: 100%;
     font-size: 1.6rem;
     margin: 3px 3px;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    background-color: white;
 }
 #official-name{
     text-align: center;
@@ -180,18 +184,21 @@
     flex-direction: row;
     width: 100%;
     margin: 3px 3px;
-    background-color: tomato;
+    /* background-color: tomato; */
+    background-color: black;
 }
 #flag-container{
     width: 100%;
     margin: 3px 3px;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    background-color: white;
     text-align: center;
 }
 #emblem-container{
     width: 100%;
     margin: 3px 3px;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    background-color: white;
     text-align: center;
 }
 #description-container{
@@ -199,7 +206,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    /* background-color: blue; */
+    background-color: black;
     height: 150px;
     margin: 3px;
     padding: 5px;
@@ -209,7 +217,8 @@
     width: 98%;
     height: 98%;
     padding: 3px 3px;
-    background-color: yellow;
+    /* background-color: yellow; */
+    background-color: white;
     padding: 5px 5px;
     font-family: var(--font1);
 }
@@ -218,7 +227,8 @@
     flex-direction: row;
     height: 300px;
     margin: 3px;
-    background-color: blue;
+    /* background-color: blue; */
+    background-color: black;
     font-family: var(--font1);
 }
 .sub-fact-container{
@@ -229,12 +239,14 @@
 #sub-fact-cont1{
     width: 100%;
     margin: 3px;
-    background-color: tomato;
+    /* background-color: tomato; */
+    background-color: black;
 }
 #sub-fact-cont2{
     width: 100%;
     margin: 3px;
-    background-color: tomato;
+    /* background-color: tomato; */
+    background-color: black;
 }
 
 #fact-container2{
@@ -242,12 +254,14 @@
     justify-content: center;
     height: 300px;
     margin: 3px;
-    background-color: blue;
+    /* background-color: blue; */
+    background-color: black;
 }
 #sub-fact-cont3{
     width: 100%;
     margin: 3px;
-    background-color: tomato;
+    /* background-color: tomato; */
+    background-color: black;
 }
 .facts{
     width: 100%;
@@ -262,7 +276,8 @@
     align-items: center;
     font-size: 1.8rem;
     margin: 2px;
-    background-color: yellow; 
+    /* background-color: yellow;  */
+    background-color: white;
 }
 .fact-value{
     width: 100%;
@@ -270,7 +285,8 @@
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    background-color: yellow;
+    /* background-color: yellow; */
+    background-color: white;
     margin: 2px;
 
 }
