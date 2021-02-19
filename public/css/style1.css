@@ -165,24 +165,30 @@ html,body {
 #countries-section{
     display: flex;
     justify-content: center;
+    background: url('../img/background-world1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 1250px;
     padding: 5px 5px;
 }
 #country-table{
     display: flex;
+    /* background-color: aqua; */
     flex-direction: column;
     justify-content: center;
     width: 100%;
     padding: 10px 10px;
     margin: 5px;
-    background-color: aqua;
+    border: solid 3px white;
+    border-radius: 10px;
 }
 .row{
     display: flex;
+    /* background-color: yellowgreen; */
     justify-content: center;
-     width: 100%; 
-     height: 120%; 
-    background-color: yellowgreen;
+    width: 100%; 
+    height: 100%; 
     padding: 0px 0px;
 }
 .column{
@@ -191,7 +197,7 @@ html,body {
     align-items: center;
     width: 100%; 
     margin: 1px; 
-    border: 1px solid black;
+    /* border: 1px solid white; */
     text-align: center;
 }
 .column img{
