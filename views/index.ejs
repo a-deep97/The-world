@@ -19,15 +19,15 @@
     </section>
     <section id="countries-section">
         <div id="country-table">
-            <% var count=0; %> 
-            <% for(row=0;row<15;row++){ %> 
+            <% var count=0; %>
+            <% for(row=0;row<19;row++){ %> 
             <div class="row">
                 <% for(col=0;col<13;col++){ %>
                 <%     var countryName=countryNames[count].name %>
-                <%     var countryCode=countryNames[count] %> 
-                <%     count++; %>   
+                <%     var countryCode=countryNames[count].code%> 
+                <%     count++; %>
                 <div class="column" id="afghansiatan"  onclick="location.href='./country?name=<%= countryName %> '">
-                    <img src="./img/flags/af.png" alt="" >
+                    <img src="./img/flags/<%= countryCode %>.png" alt="" >
                 </div>
                 <% } %>  
                 <!-- <div class="column" id="albania-col" onclick="location.href='./country?name=Albania';">
