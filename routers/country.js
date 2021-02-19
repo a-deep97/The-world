@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const router = express.Router();
 const mongoose = require('mongoose')
 
-const utilities = require('../public/js/utilities')
+const utilities = require('../public/js/string-utilities')
 const validateSearch=require('../public/js/validate-search')
 //getting country model
 const Country = require('../models/countryM')
