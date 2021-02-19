@@ -19,11 +19,18 @@
     </section>
     <section id="countries-section">
         <div id="country-table">
+            <% var count=0; %> 
+            <% for(row=0;row<15;row++){ %> 
             <div class="row">
-                <div class="column" id="afghanistan-col" onclick="location.href='./country?name=Afghanistan';">
+                <% for(col=0;col<13;col++){ %>
+                <%     var countryName=countryNames[count].name %>
+                <%     var countryCode=countryNames[count] %> 
+                <%     count++; %>   
+                <div class="column" id="afghansiatan"  onclick="location.href='./country?name=<%= countryName %> '">
                     <img src="./img/flags/af.png" alt="" >
                 </div>
-                <div class="column" id="albania-col" onclick="location.href='./country?name=Albania';">
+                <% } %>  
+                <!-- <div class="column" id="albania-col" onclick="location.href='./country?name=Albania';">
                     <p>Lorem ipsum dolor</p>
                 </div>
                 <div class="column" id="algeria-col" onclick="location.href='./country?name=Algeria';">
@@ -58,9 +65,10 @@
                 </div>
                 <div class="column" id="bahrain-col" onclick="location.href='country-home.html';">
                     <p>Lorem ipsum dolor</p>
-                </div>
+                </div> -->
             </div>
-            <div class="row">
+            <% } %>
+            <!-- <div class="row">
                 <div class="column" id="bangladesh-col" onclick="location.href='country-home.html';">
                     <p>Lorem ipsum dolor</p>
                 </div>
@@ -633,7 +641,7 @@
                 <div class="column" id="zimbabwe-col" onclick="location.href='country-home.html';">
                     <p>Lorem ipsum dolor</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <footer>

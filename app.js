@@ -3,6 +3,8 @@ const express = require('express')
 const mongoose = require('mongoose')
 const methodOverride = require('method-override')
 
+const countryNames=require('./public/js/countries')
+
 // getting country router
 const countryRouter =require('./routers/country')
 
@@ -36,7 +38,7 @@ db.once('open',()=>{
 //get method for home page
 app.get('/',(req,res)=>{
 
-    res.render('index');
+    res.render('index',{countryNames:countryNames.countries_with_code});
 })
 //use method for country router 
 app.use('/country',countryRouter)
