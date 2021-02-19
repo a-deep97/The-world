@@ -2,11 +2,15 @@
 :root{
 }
 
+html,body {
+    margin:0;
+    padding:0;
+}
 /* Navigation bar section */
 #navbar{
     display: flex;
-    background-color: rgba(0, 0, 0, 0.349);
-    height: 80px;
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 60px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -86,9 +90,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: black;
     height: 550px;
     padding: 20px 20px;
 }
+/*
 #home-section::before{
     content: "";
     display: flex;
@@ -106,6 +112,7 @@
     width: 100%;
     opacity: 90%;
 } 
+*/
 #main-heading{
     display: flex;
     justify-content: center;
@@ -188,9 +195,10 @@
     text-align: center;
 }
 .column img{
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 100%;
+    max-height: 100%;
 }
+
 .column:hover{
     /* background-color: lime; */
     cursor: pointer;
