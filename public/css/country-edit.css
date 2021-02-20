@@ -9,10 +9,11 @@
 /* Navigation bar section */
 #navbar{
     display: flex;
-    height: 80px;
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 60px;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    font-family: var(--font1);
 }
 /*
 #navbar::before{
