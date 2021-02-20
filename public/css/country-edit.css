@@ -11,6 +11,12 @@ html,body {
     margin:0;
     padding:0;
 }
+body{
+    background: url('../img/background-world2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /* Navigation bar section */
 #navbar{
     display: flex;
@@ -115,21 +121,21 @@ html,body {
 #main-container{
     display: flex;
     flex-direction: row;
-    background-color: burlywood;
+    /* background-color: burlywood; */
     height: 1000px;
 }
 #left-aside{
     display: flex;
     width: 20%;
-    background-color: darkorange;
+    /* background-color: darkorange; */
 }
 #main-article{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: springgreen;
+    justify-content: flex-start;
+    /* background-color: springgreen; */
     width: 100%;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 #main-article form{
     display: flex;
@@ -280,7 +286,7 @@ html,body {
 #right-aside{
     display: flex;
     width: 10%;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
 }
 
 /* Footer */
