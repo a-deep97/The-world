@@ -173,7 +173,7 @@ html,body {
 }
 /* Countries-section */
 
-#countries-section{
+#flag-section{
     display: flex;
     justify-content: center;
     background: url('../img/background-world1.jpg');
@@ -183,7 +183,7 @@ html,body {
     height: 1250px;
     padding: 5px 5px;
 }
-#country-table{
+#flag-table{
     display: flex;
     /* background-color: aqua; */
     flex-direction: column;
