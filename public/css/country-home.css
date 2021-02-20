@@ -179,6 +179,8 @@ body{
     padding: 0px 10px;
 }
 #primary-name-container{
+    display: flex;
+    justify-content: center;
     width: 100%;
     margin: 3px 3px;
     /* background-color: cadetblue; */
@@ -192,6 +194,8 @@ body{
     padding: 10px 10px;
 }
 #official-name-container{
+    display: flex;
+    justify-content: center;
     width: 100%;
     font-size: 1.6rem;
     margin: 3px 3px;
@@ -200,7 +204,7 @@ body{
 }
 #official-name{
     text-align: center;
-    padding: 5px 10px;
+    padding: 5px 5px;
     font-family: var(--font1);
 }   
 #symbol-container{

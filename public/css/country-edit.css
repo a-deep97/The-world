@@ -122,7 +122,7 @@ body{
     display: flex;
     flex-direction: row;
     /* background-color: burlywood; */
-    height: 1000px;
+    height: 800px;
 }
 #left-aside{
     display: flex;
@@ -147,6 +147,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     font-size: 1.2rem;
     width: 10%;
     height: 5%;
@@ -154,81 +156,117 @@ body{
     font-family: var(--font1);
 }
 #topic{
-    background-color: blue;
+    /* background-color: blue; */
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: row;
     height: 150px;
+    border-radius: 10px;
 }
 #name-container{
     display: flex;
     width: 100%;
     flex-direction: column;
     margin: 3px 3px;
-    background-color: tomato;
+    /* background-color: tomato; */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: solid white 2px;
+    border-radius: 10px;
     padding: 0px 10px;
 }
 #primary-name-container{
+    display: flex;
+    justify-content: center;
     width: 100%;
     margin: 3px 3px;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    /* background-color: black; */
     padding: 0px 0px;
 }
 #primary-name{
     text-align: center;
     font-size: 3rem;
+    font-family: var(--font1);
     padding: 10px 10px;
 }
 #official-name-container{
+    display: flex;
+    justify-content: center;
     width: 100%;
     font-size: 1.6rem;
     margin: 3px 3px;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    /* background-color: black; */
 }
 #official-name{
     text-align: center;
-    padding: 5px 10px;
+    padding: 5px 5px;
+    font-family: var(--font1);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
 }   
 #symbol-container{
     display: flex;
     flex-direction: row;
     width: 100%;
     margin: 3px 3px;
-    background-color: tomato;
+    /* background-color: tomato; */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 #flag-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin: 3px 3px;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    /* background-color: black; */
     text-align: center;
 }
 #emblem-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin: 3px 3px;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    /* background-color: black; */
     text-align: center;
 }
 #description-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    /* background-color: blue; */
+    background-color: rgba(0, 0, 0, 0.5);
     height: 150px;
     margin: 3px;
     padding: 5px;
+    border-radius: 10px;
 }
 #description{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: yellow;
-    padding: 5px 5px;
+    width: 98%;
+    height: 98%;
+    padding: 3px 3px;
+    /* background-color: yellow; */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: solid white 2px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-family: var(--font1);
 }
 #fact-container1{
     display: flex;
     flex-direction: row;
-    height: 300px;
+    height: 200px;
     margin: 3px;
-    background-color: blue;
+    /* background-color: blue; */
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: var(--font1);
 }
 .sub-fact-container{
     display: flex;
@@ -238,25 +276,33 @@ body{
 #sub-fact-cont1{
     width: 100%;
     margin: 3px;
-    background-color: tomato;
+    /* background-color: tomato; */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    border: solid white 2px;
 }
 #sub-fact-cont2{
     width: 100%;
     margin: 3px;
-    background-color: tomato;
+    /* background-color: tomato; */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    border: solid white 2px;
 }
 
 #fact-container2{
     display: flex;
     justify-content: center;
-    height: 300px;
+    height: 200px;
     margin: 3px;
-    background-color: blue;
+    /* background-color: blue; */
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: var(--font1);
 }
 #sub-fact-cont3{
     width: 100%;
     margin: 3px;
-    background-color: tomato;
+    /* background-color: tomato; */
+    /* background-color: black; */
+    border: solid 2px white;
 }
 .facts{
     width: 100%;
@@ -265,21 +311,27 @@ body{
     flex-direction: row;
 }
 .fact-label{
+    text-align: center;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1rem;
     margin: 2px;
-    background-color: yellow; 
+    /* background-color: yellow;  */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; 
 }
 .fact-value{
+    text-align: center;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    background-color: yellow;
+    font-size: 1rem;
+    /* background-color: yellow; */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     margin: 2px;
 
 }
