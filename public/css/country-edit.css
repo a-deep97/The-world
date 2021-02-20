@@ -104,8 +104,8 @@ html,body {
 #intro-section{
     display: flex;
     flex-direction: row;
-    background-color: aquamarine;
-    font-family: var(--font1);
+    /* background-color: aquamarine; */
+    background-color: black;
 }
 #heading{
     display: flex;
