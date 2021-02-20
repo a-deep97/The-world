@@ -6,6 +6,10 @@
     --font1 : 'Roboto', sans-serif;
     --font2 : 'Black Ops One', cursive;
 }
+html,body {
+    margin:0;
+    padding:0;
+}
 body{
     background: url('../img/background-world2.jpg');
     background-position: center;

@@ -5,7 +5,10 @@
     --font1 : 'Roboto', sans-serif;
 }
 
-
+html,body {
+    margin:0;
+    padding:0;
+}
 /* Navigation bar section */
 #navbar{
     display: flex;
