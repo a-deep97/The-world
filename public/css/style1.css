@@ -78,10 +78,10 @@ html,body {
 #home-section{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: black;
-    height: 700px;
+    height: 650px;
     padding: 20px 20px;
 }
 
