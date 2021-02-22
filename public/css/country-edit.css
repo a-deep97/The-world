@@ -23,18 +23,7 @@ html,body {
     position: sticky;
     top: 0%;
 }
-/*
-#navbar::before{
-    content: "";
-    background-color: black;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 80px;
-    width: 100%;
-    opacity: 50%;
-    z-index: -1;
-}*/
+
 #name-icon{
     display: flex;
     width: 100%;
@@ -92,28 +81,6 @@ html,body {
 #link2{
     display: none;
 }
-/*
-#links ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
-    width: 50%;
-}
-#links ul li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    list-style: none;
-}
-#links ul li a{
-    display: flex;
-    text-decoration: none;
-    font-size: 1.5rem;
-}
-*/
 
 /* Main section */
 
