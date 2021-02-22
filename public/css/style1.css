@@ -159,10 +159,15 @@ html,body {
 }
 #suggestion-box div{
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.25);
     width: 100%;
     height: 40px;
+    padding: 3px 3px;
     border-radius: 5px;
+    color: white;
+    font-size: 1.3rem;
 }
 #suggestion-box div:hover{
     background-color: #1e4dd4;
