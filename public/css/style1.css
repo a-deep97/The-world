@@ -170,7 +170,7 @@ html,body {
     font-size: 1.3rem;
     cursor: pointer;
 }
-#suggestion-box div:hover{
+#suggestion-box div:hover, #suggestion-box div.selected {
     background-color: #1e4dd4;
 }
 /* Countries-section */

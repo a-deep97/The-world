@@ -253,8 +253,37 @@ var countries_with_code=[{"code": "AF", "code3": "AFG", "name": "Afghanistan", "
 
 const search_box=document.querySelector('#search-box');
 let suggestion_box=document.querySelector('#suggestion-box');
-
-search_box.addEventListener('keyup',()=>{
+var suggestion_index=-1;
+search_box.addEventListener('keyup',(e)=>{
+    
+    // Arrow down Event
+    if(e.key=='ArrowDown'){
+        if(suggestion_index>=0){
+            suggestion_box.children[suggestion_index].classList.remove('selected');    
+        }
+        if(suggestion_index>=suggestion_box.childElementCount-1){
+            suggestion_index=-1;
+        }
+        suggestion_index+=1;
+        suggestion_box.children[suggestion_index].classList.add('selected');
+        search_box.value=suggestion_box.children[suggestion_index].innerHTML;
+        return;
+    }
+    // Arrow up event
+    if(e.key=='ArrowUp'){
+        if(suggestion_index>=0){
+            suggestion_box.children[suggestion_index].classList.remove('selected');    
+        }
+        if(suggestion_index==0){
+            suggestion_index=suggestion_box.childElementCount;       
+        }
+        suggestion_index-=1;
+        suggestion_box.children[suggestion_index].classList.add('selected');
+        search_box.value=suggestion_box.children[suggestion_index].innerHTML;
+        return;
+    }
+    suggestion_index=-1;
+    
     let input_value=search_box.value;
     let suggestions  = countries_with_code.filter((country)=>{
         return country.name.toLowerCase().startsWith(input_value.toLowerCase());
