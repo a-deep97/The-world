@@ -168,6 +168,7 @@ html,body {
     border-radius: 5px;
     color: white;
     font-size: 1.3rem;
+    cursor: pointer;
 }
 #suggestion-box div:hover{
     background-color: #1e4dd4;

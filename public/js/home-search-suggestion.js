@@ -253,18 +253,28 @@ var countries_with_code=[{"code": "AF", "code3": "AFG", "name": "Afghanistan", "
 
 const search_box=document.querySelector('#search-box');
 let suggestion_box=document.querySelector('#suggestion-box');
+
 search_box.addEventListener('keyup',()=>{
     let input_value=search_box.value;
     let suggestions  = countries_with_code.filter((country)=>{
-        return country.name.toLowerCase().startsWith(input_value);
+        return country.name.toLowerCase().startsWith(input_value.toLowerCase());
     });
     suggestion_box.innerHTML=null;
     for(var i=0;i<suggestions.length,i<6;i++){
         let div=document.createElement('div');
+        div.className='suggestions';
         div.innerHTML=suggestions[i].name;
         suggestion_box.appendChild(div);
     }
     if(input_value==''){
         suggestion_box.innerHTML=null;
     }
-})
+});
+
+suggestion_box.addEventListener('click',(e)=>{
+    
+    if(e.target.className=='suggestions'){
+        search_box.value=e.target.innerHTML;
+        suggestion_box.innerHTML=null;
+    }
+});
