@@ -78,7 +78,7 @@ html,body {
 #home-section{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background-color: black;
     height: 650px;
@@ -90,8 +90,8 @@ html,body {
     justify-content: center;
     align-items: center;
     width: 60%;
-    height: 30%;
-    margin: 30px;
+    height: 300px;
+    margin: 10px;
     font-size: 4.5rem;
     text-align: center;
     color: white;
