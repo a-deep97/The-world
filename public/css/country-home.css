@@ -132,8 +132,38 @@ html,body {
 }
 #left-aside{
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     /* background-color: darkorange; */
-    width: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 25%;
+}
+#side-navigation-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: aqua; */
+    width: 100%;
+    height: 500px;
+    margin: 10px 0px;
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    /* background-color: blue; */
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    color: white;
+    font-family: var(--font1);
+    cursor: pointer;
+}
+.nav-list:hover{
+    background-color: rgba(0, 0, 0, 0.7);
 }
 #main-article{
     display: flex;
