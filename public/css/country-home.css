@@ -194,12 +194,15 @@ html,body {
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    padding: 5px 5px;
     height: 200px;
     border-radius: 10px;
 }
 #name-container{
     display: flex;
     width: 100%;
+    height: 175px;
     flex-direction: column;
     margin: 3px 3px;
     /* background-color: tomato; */
@@ -237,11 +240,18 @@ html,body {
     text-align: center;
     padding: 5px 5px;
     font-family: var(--font1);
+}
+#national-media-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 3px 3px;
 }   
-#symbol-container{
+#national-symbol-container{
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 130px;
     margin: 3px 3px;
     /* background-color: tomato; */
     background-color: rgba(0, 0, 0, 0.5);
@@ -250,8 +260,8 @@ html,body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin: 3px 3px;
+    width: 95%;
+    padding: 5px 5px;
     /* background-color: cadetblue; */
     /* background-color: black; */
     text-align: center;
@@ -261,10 +271,19 @@ html,body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 3px 3px;
+    padding: 5px 5px;
     /* background-color: cadetblue; */
     /* background-color: black; */
     text-align: center;
+}
+#national-audio-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100px;
+    margin: 3px 3px;
 }
 #description-container{
     display: flex;
