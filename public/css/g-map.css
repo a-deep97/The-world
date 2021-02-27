@@ -73,10 +73,11 @@ html,body {
     color: white;
     font-family: var(--font1);
 }
-#link1{
+
+#link2{
     display: none;
 }
-#link2{
+#link3{
     display: none;
 }
 
