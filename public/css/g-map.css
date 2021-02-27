@@ -85,7 +85,7 @@ html,body {
 #main-section{
     display: flex;
     flex-direction: column;
-    height: 800px;
+    height: 750px;
     flex-direction: column;
     background: url('../img/background-world2.jpg');
     background-position: center;
@@ -118,6 +118,7 @@ html,body {
     /* background-color: darkorange; */
     background-color: rgba(0, 0, 0, 0.5);
     width: 25%;
+    height: 100%;
 }
 #show-hide-button{
     display: flex;
@@ -163,12 +164,21 @@ html,body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     /* background-color: springgreen; */
     /* background-color: white; */
     width: 100%;
     padding: 10px 10px;
 }
-
+#map-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 95%;
+    height: 95%;
+    padding: 5px 5px;
+}
 #right-aside{
     display: flex;
     width: 10%;
