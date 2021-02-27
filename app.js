@@ -7,7 +7,8 @@ const countryNames=require('./public/js/countries')
 
 // getting country router
 const countryRouter =require('./routers/country')
-
+// getting maps router
+const gMap=require('./routers/g-map')
 
 //aquiring express function 
 const app= express()
@@ -42,6 +43,8 @@ app.get('/',(req,res)=>{
 })
 //use method for country router 
 app.use('/country',countryRouter)
+//use method for map router
+app.use('/maps',gMap)
 
 // app listening to port 3000
 app.listen(3000);
