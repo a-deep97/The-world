@@ -1,3 +1,4 @@
 node_modules
 country_info.json
 database
+.env
