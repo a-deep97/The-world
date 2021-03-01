@@ -193,19 +193,27 @@ html,body {
     flex-direction: row;
     justify-content: flex-start;
     padding: 5px 5px;
-    height: 200px;
+    height: 350px;
     border-radius: 10px;
+}
+#identity-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
 }
 #name-container{
     display: flex;
-    width: 100%;
-    height: 175px;
+    width: 95%;
+    height: 95%;
     flex-direction: column;
     margin: 3px 3px;
     /* background-color: tomato; */
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    border: solid white 2px;
+    border: solid white 1px;
     border-radius: 10px;
     padding: 0px 10px;
 }
@@ -241,15 +249,18 @@ html,body {
 #national-media-container{
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
+    height: 95%;
     margin: 3px 3px;
 }   
 #national-symbol-container{
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 130px;
-    margin: 3px 3px;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 95%;
     /* background-color: tomato; */
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -257,17 +268,23 @@ html,body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 95%;
+    width: 100%;
+    height: 95%;
     padding: 5px 5px;
     /* background-color: cadetblue; */
     /* background-color: black; */
     text-align: center;
+}
+#flag-container img{
+    max-width: 100%;
+    max-height: 100%;
 }
 #emblem-container{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 95%;
     padding: 5px 5px;
     /* background-color: cadetblue; */
     /* background-color: black; */
@@ -278,9 +295,8 @@ html,body {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    margin: 3px 3px
+    width: 95%;
+    height: 95%;
 }
 #national-anthem-name-container{
     display: flex;
@@ -314,6 +330,17 @@ html,body {
 #anthem-time-status{
 
 } */
+#map-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 98%;
+    border: solid 1px white;
+    border-radius: 10px;
+}
+
 
 #description-container{
     display: flex;
