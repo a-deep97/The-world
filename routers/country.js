@@ -56,7 +56,6 @@ router.put('/:id',async (req,res)=>{
         countryData.land_area=utilities.removeExtraSpaces(data.land_area);
         countryData.population=utilities.removeExtraSpaces(data.population);
         countryData.motto=utilities.removeExtraSpaces(data.motto);
-        countryData.national_anthem=utilities.removeExtraSpaces(data.national_anthem);
         countryData.president=utilities.removeExtraSpaces(data.president);
         countryData.prime_minister=utilities.removeExtraSpaces(data.prime_minister);
         countryData.supreme_leader=utilities.removeExtraSpaces(data.supreme_leader);
