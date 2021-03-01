@@ -54,6 +54,10 @@ const countrySchema = mongoose.Schema({
     },
     currency:{
         type: String
+    },
+    capital_coordinates:{
+        type: Array,
+        default: [0,0]
     }
 })
 

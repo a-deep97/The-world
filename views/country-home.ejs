@@ -177,7 +177,7 @@
                         </div>
                     </div>
                 </div> -->
-            </article>
+            </article> 
             <aside id="right-aside">
             </aside>
         </div>
@@ -186,6 +186,8 @@
         <div id="footer"></div>
     </footer>
     <!-- scripts -->
+    <script src="./js/country-gmap.js" capital="<%= countryData.capital_coordinates %>"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<%=gmapApiKey%>&callback=initMap&libraries=&v=weekly" async></script>
     <script src="./js/side-nav-panel.js"></script>
 </body>
 </html>

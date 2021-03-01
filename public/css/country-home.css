@@ -340,7 +340,13 @@ html,body {
     border: solid 1px white;
     border-radius: 10px;
 }
-
+#country-on-gmap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
 
 #description-container{
     display: flex;
