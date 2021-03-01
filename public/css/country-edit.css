@@ -83,7 +83,7 @@ html,body {
 #main-section{
     display: flex;
     flex-direction: column;
-    height: 850px;
+    height: 950px;
     background: url('../img/background-world2.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -104,7 +104,7 @@ html,body {
     display: flex;
     flex-direction: row;
     /* background-color: burlywood; */
-    height: 800px;
+    height: 900px;
 }
 #left-aside{
     display: flex;
@@ -191,18 +191,29 @@ html,body {
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: row;
-    height: 150px;
+    justify-content: flex-start;
+    padding: 5px 5px;
+    height: 350px;
     border-radius: 10px;
+}
+#identity-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
 }
 #name-container{
     display: flex;
-    width: 100%;
+    width: 95%;
+    height: 95%;
     flex-direction: column;
     margin: 3px 3px;
     /* background-color: tomato; */
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    border: solid white 2px;
+    border: solid white 1px;
     border-radius: 10px;
     padding: 0px 10px;
 }
@@ -237,11 +248,21 @@ html,body {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
 }   
-#symbol-container{
+#national-media-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
+    height: 95%;
     margin: 3px 3px;
+}   
+#national-symbol-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 95%;
     /* background-color: tomato; */
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -250,20 +271,83 @@ html,body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 3px 3px;
+    height: 95%;
+    padding: 5px 5px;
     /* background-color: cadetblue; */
     /* background-color: black; */
     text-align: center;
+}
+#flag-container img{
+    max-width: 100%;
+    max-height: 100%;
 }
 #emblem-container{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 3px 3px;
+    height: 95%;
+    padding: 5px 5px;
     /* background-color: cadetblue; */
     /* background-color: black; */
     text-align: center;
+}
+#national-anthem-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 95%;
+    height: 95%;
+}
+#national-anthem-name-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+/*
+#anthem-name-local{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+#anthem-name-english{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+*/
+#national-anthem-audio-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+/*
+#anthem-play-button{
+
+}
+#status-anthem-status-bar{
+
+}
+#anthem-time-status{
+
+} */
+#map-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 98%;
+    border: solid 1px white;
+    border-radius: 10px;
+}
+#country-on-gmap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 #description-container{
     display: flex;

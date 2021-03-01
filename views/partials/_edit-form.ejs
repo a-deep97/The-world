@@ -1,19 +1,37 @@
 <div id="topic">
-    <div id="name-container">
-        <div id="primary-name-container"> 
-            <div id="primary-name" ><%= countryData.name %> </div>
+    <div id="identity-container">
+        <div id="name-container">
+            <div id="primary-name-container"> 
+                <div id="primary-name" ><%= countryData.name %> </div>
+            </div>
+            <div id="official-name-container">
+                <input id="official-name" type="text" name="official_name" value="<%= countryData.official_name %> ">
+            </div>
         </div>
-        <div id="official-name-container">
-            <input id="official-name" type="text" name="official_name" value="<%= countryData.official_name %> ">
+        <div id="national-media-container">
+            <div id="national-symbol-container">
+                <div id="flag-container">
+                    <img src="/img/flags2/<%= countryData.code.toLowerCase() %>.png" alt="">
+                </div>
+                <div id="emblem-container">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div id="national-anthem-container">
+                <div id="national-anthem-name-container">
+                    <div id="anthem-name-local"></div>
+                    <div id="anthem-name-english"></div>
+                </div>
+                <div id="national-anthem-audio-container">
+                    <div id="anthem-play-button"></div>
+                    <div id="status-anthem-status-bar"></div>
+                    <div id="anthem-time-status"></div>
+                </div>
+            </div>
         </div>
     </div>
-    <div id="symbol-container">
-        <div id="flag-container">
-            <img src="/img/flags2/<%= countryData.code.toLowerCase() %>.png" alt="">
-        </div>
-        <div id="emblem-container">
-                <img src="" alt="">
-        </div>
+    <div id="map-container">
+        <div id="country-on-gmap"></div>
     </div>
 </div>
 <div id="description-container">
