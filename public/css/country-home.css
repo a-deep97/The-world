@@ -84,7 +84,7 @@ html,body {
 #main-section{
     display: flex;
     flex-direction: column;
-    height: 800px;
+    height: 900px;
     flex-direction: column;
     background: url('../img/background-world2.jpg');
     background-position: center;
@@ -125,7 +125,7 @@ html,body {
     display: flex;
     flex-direction: row;
     /* background-color: burlywood; */
-    height: 750px;
+    height: 850px;
 }
 #left-aside{
     display: flex;
