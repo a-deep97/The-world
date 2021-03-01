@@ -31,7 +31,10 @@
         </div>
     </div>
     <div id="map-container">
-        <div id="country-on-gmap"></div>
+        <div id="country-on-gmap">
+            <label class="fact-label" for="capital-latitude">Latitude of the capital city: <input class="fact-value" id="capital-latitude" type="text" name="capital-latitude" value="<%= countryData.capital_coordinates[0] %> "></label>
+            <label class="fact-label" for="capital-longitude">Longitude of the capital city: <input class="fact-value" id="capital-longitude" type="text" name="capital-longitude" value="<%= countryData.capital_coordinates[1] %> "></label>
+        </div>
     </div>
 </div>
 <div id="description-container">
