@@ -16,6 +16,7 @@
         </div>
         <div id="main-container">
             <aside id="left-aside">
+                <%- include('./partials/_side-panel') %> 
             </aside>
             <article id="main-article">
                 <form action="/country/<%= countryData.id %>?_method=PUT" method="POST">
@@ -32,6 +33,25 @@
             
         </div>
     </footer>
+    <!-- Scripts -->
+    <!-- side-panel script      -->
+    <script>
+        const show_button=document.querySelector('#show-hide-button');
+        let hide_status=false;
+        show_button.addEventListener('click',(e)=>{
+            let left_aside=document.querySelector('#left-aside');
+            let nav_panel=document.querySelector('#side-navigation-panel');
+            if(!hide_status){
+                left_aside.style.width="80px";
+                nav_panel.style.display="none";
+                hide_status=true;
+            }
+            else{
+                left_aside.style.width="25%";
+                nav_panel.style.display="flex";
+                hide_status=false;
+            }
+        });
+    </script>
 </body>
-<script src="country.js"></script>
 </html>

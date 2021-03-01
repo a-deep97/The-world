@@ -19,10 +19,7 @@
         </div>
         <div id="main-container">
             <aside id="left-aside">
-                <div id="show-hide-button">S</div>
-                <div id="side-navigation-panel">
-                    <div class="nav-list" id="list-home" onclick="location.href='./country?name=<%= countryData.name %> '" >Home</div>
-                </div>
+                <%- include('./partials/_side-panel') %> 
             </aside>
             <article id="main-article">
                 <div id="topic">
@@ -188,6 +185,5 @@
     <!-- scripts -->
     <script src="./js/country-gmap.js" capital="<%= countryData.capital_coordinates %>"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=<%=gmapApiKey%>&callback=initMap&libraries=&v=weekly" async></script>
-    <script src="./js/side-nav-panel.js"></script>
 </body>
 </html>

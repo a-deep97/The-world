@@ -29,6 +29,7 @@ app.use(express.urlencoded({extended:false}))
 app.use(express.static('public'))
 app.use('/css',express.static(__dirname+'public/css'))
 app.use('/img',express.static(__dirname+'public/img'))
+app.use('/js',express.static(__dirname+'public/js'))
 app.use(methodOverride('_method'))
 
 //checking database connection validity
