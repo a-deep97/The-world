@@ -1,27 +1,29 @@
 
-//parent container of globe canvas
-const globe_container=document.querySelector('#globe-container');
 
-//global var
-let globe_angle=0;
-//setup function
-function setup() {
-    let canvas=createCanvas(700,700,WEBGL);
-    canvas.parent(globe_container);
-    canvas.elt.style.display="block";  
-}
-//preloading assets
-function preload() {
-    img = loadImage('../../../img/globe-day-texture-2k.JPG');
-}
-//looped draw function
-function draw() {
+var globe_sketch=function(sketch){
 
-    background(255,255,255,0);
-    push();
-    rotateY(0.2*globe_angle);
-    texture(img);
-    sphere(300,100,100);
-    pop();
-    globe_angle+=0.01;
-}
+    //parent container of globe canvas
+    const globe_container=document.querySelector('#globe-container');
+    //global var
+    let angle_y=0;
+
+    sketch.setup=function(){
+        let canvas=sketch.createCanvas(700,700,sketch.WEBGL);
+        canvas.parent(globe_container);
+        canvas.elt.style.display="block";
+    };
+    sketch.preload=function(){
+        img = sketch.loadImage('../../../img/globe-day-texture-2k.JPG');    
+    };
+    sketch.draw=function(){
+        sketch.angleMode(sketch.DEGREES);
+        sketch.background(255,255,255,0);
+        sketch.push();
+        sketch.rotateY(angle_y);
+        sketch.texture(img);
+        sketch.sphere(300,100,100);
+        sketch.pop();
+        angle_y+=0.1;
+    };
+};
+var globeSketch = new p5(globe_sketch);
