@@ -1,4 +1,5 @@
 node_modules
 country_info.json
 database
+public/js/p5js/lib
 .env
