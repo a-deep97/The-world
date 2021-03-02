@@ -11,7 +11,7 @@ function setup() {
 }
 
 function preload() {
-  img = loadImage('../../../img/globe-texture.JPG');
+  img = loadImage('../../../img/globe-texture2.JPG');
 }
 
 function draw() {
