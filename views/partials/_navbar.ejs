@@ -14,6 +14,14 @@
             <a href="/maps">Map</a>
         </div>
     </div>
+    <div id="login-signup-container">
+        <div id="login-link">
+            <a href="">Login</a>
+        </div>
+        <div id="sign-up-link">
+            <a href="">Sign Up</a>
+        </div>
+    </div>
 </nav>
 <style>
     #navbar{
@@ -81,5 +89,59 @@
     }
     .navbar-link a:hover{
         background-color: black;
+    }
+    #login-signup-container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 80%;
+        margin: 0px 10px;
+        border: solid 1px white;
+        border-radius: 10px;
+    }
+    #login-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 90%;
+        margin: 0px 5px;
+    }
+    #login-link a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        height: 95%;
+        font-size: 1.2rem;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+    #login-link a:hover{
+        background-color: white;
+        color: black;
+    }
+    #sign-up-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 90%;
+    }
+    #sign-up-link a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        height: 95%;
+        font-size: 1.2rem;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+    #sign-up-link a:hover{
+        background-color: white;
+        color: black;
     }
 </style>
