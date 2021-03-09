@@ -11,6 +11,8 @@ html,body {
     padding:0;
     scroll-behavior: smooth;
     background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 /* Navigation bar section */
 #navbar{
