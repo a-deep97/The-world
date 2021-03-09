@@ -16,11 +16,42 @@ html,body {
 
 /* LOGIN SECTION */
 #login-section{
-
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 680px;
 }
 #login-heading{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    color: white;
+    font-size: 1.8rem;
+    font-family: var(--font1);
 }
 #login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: solid 1px white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
 
+/* FOOTER */
+footer{
+    display: flex;
+    height: 50px;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
 }
