@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+:root{
+    --font1 : 'Roboto', sans-serif;
+    --font2 : 'Black Ops One', cursive;
+}
+html,body {
+    margin:0;
+    padding:0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+/* LOGIN SECTION */
+#login-section{
+
+}
+#login-heading{
+
+}
+#login-container{
+
+}
