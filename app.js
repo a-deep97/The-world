@@ -13,6 +13,8 @@ const countryRouter =require('./routers/country')
 const gMap=require('./routers/g-map')
 //getting login router
 const loginRouter=require('./routers/login')
+//getting signup router
+const signupRouter=require('./routers/signup')
 
 //aquiring express function 
 const app= express()
@@ -52,6 +54,8 @@ app.use('/country',countryRouter)
 app.use('/maps',gMap)
 //use login router
 app.use('/login',loginRouter)
+//use signup router
+app.use('/signup',signupRouter)
 
 // app listening to port 3000
 app.listen(3000);
