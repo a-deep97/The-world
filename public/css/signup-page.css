@@ -30,7 +30,7 @@ html,body {
     height: 100px;
     color: white;
     font-size: 1.8rem;
-    font-family: var(--font1);
+    font-family: var(--font2);
 }
 #signup-container{
     display: flex;
