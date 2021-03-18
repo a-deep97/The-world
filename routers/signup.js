@@ -21,7 +21,7 @@ router.post('/',async (req,res)=>{
        //hashing user password
        const hashedPassword = await bcrypt.hash(req.body.password,12);
        USERS.push({
-           id: req.body.name,
+           id: req.body.name+req.body.name,
            name: req.body.name,
            email: req.body.email,
            password: hashedPassword

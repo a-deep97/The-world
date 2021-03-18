@@ -1,11 +1,14 @@
+require('dotenv').config();
+
 // Installing libraries
 const express = require('express')
 const mongoose = require('mongoose')
 const methodOverride = require('method-override')
+const passport = require('passport')
 
-require('dotenv').config();
 
 const countryNames=require('./public/js/countries')
+
 
 // getting country router
 const countryRouter =require('./routers/country')
