@@ -5,7 +5,8 @@ const express = require('express')
 const mongoose = require('mongoose')
 const methodOverride = require('method-override')
 const passport = require('passport')
-
+const flash=require('express-flash')
+const session=require('express-session')
 
 const countryNames=require('./public/js/countries')
 
@@ -39,6 +40,17 @@ app.use('/img',express.static(__dirname+'public/img'))
 app.use('/js',express.static(__dirname+'public/js'))
 app.use(methodOverride('_method'))
 
+//
+app.use(flash());
+app.use(session({
+    secret: process.env.SESSION_SECRET,
+    resave:false,
+    saveUninitialized: false
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+
+
 //checking database connection validity
 const db= mongoose.connection
 db.once('open',()=>{
@@ -49,6 +61,12 @@ db.once('open',()=>{
 //get method for home page
 app.get('/',(req,res)=>{
 
+    if(req.isAuthenticated()){
+        console.log('authenticated');
+    }
+    else{
+        console.log('not authenticated');
+    }
     res.render('index',{countryNames:countryNames.countries_with_code});
 })
 //use method for country router 

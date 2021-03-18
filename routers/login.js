@@ -22,15 +22,6 @@ initializePassport(
 
 router.use(bodyParser.urlencoded({extended:true}));
 
-router.use(flash());
-router.use(session({
-    secret: process.env.SESSION_SECRET,
-    resave:false,
-    saveUninitialized: false
-}));
-router.use(passport.initialize());
-router.use(passport.session());
-
 //main route
 router.get('/',(req,res)=>{
     res.render('login-page');
