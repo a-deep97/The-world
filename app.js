@@ -78,5 +78,11 @@ app.use('/login',loginRouter)
 //use signup router
 app.use('/signup',signupRouter)
 
+//logout user
+app.delete('/logout',(req,res)=>{
+    req.logOut();
+    res.redirect('/');
+})
+
 // app listening to port 3000
 app.listen(3000);
