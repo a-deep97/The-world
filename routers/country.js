@@ -25,7 +25,7 @@ router.get('/',(req,res)=>{
             }
             //gmap api key
             const gmapApiKey=process.env.GMAP_API_KEY;
-            res.render('country-home',{countryData,gmapApiKey});
+            res.render('country-home',{countryData,gmapApiKey,req:req});
         });
     }
     else{

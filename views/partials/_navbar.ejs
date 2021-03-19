@@ -15,13 +15,17 @@
         </div>
     </div>
     <div id="login-signup-container">
-        <div id="login-link">
-            <a href="/login">Login</a>
-        </div>
-        <div id="sign-up-link">
-            <a href="/signup">Sign Up</a>
-        </div>
-        <%- include('./logout-form') %> 
+        <% if(!req.isAuthenticated()){ %>
+            <div id="login-link">
+                <a href="/login">Login</a>
+            </div>
+            <div id="sign-up-link">
+                <a href="/signup">Sign Up</a>
+            </div>
+        <% } %>
+        <% if(req.isAuthenticated()){ %>
+            <%- include('./logout-form') %>
+        <% } %>    
     </div>
 </nav>
 <style>
@@ -51,7 +55,7 @@
         font-size: 2.2rem;
         font-family: 'Black Ops One', cursive;
         color: white;
-        width: 30%;
+        width: 35%;
         height: 100%;
     }
     #icon{

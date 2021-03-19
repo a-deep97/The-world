@@ -13,7 +13,7 @@ let passingObject={gmapApiKey};
 //current route
 router.get('/',(req,res)=>{
 
-    res.render('g-map',{passingObject});
+    res.render('g-map',{passingObject,req:req});
 });
 
 

@@ -67,7 +67,7 @@ app.get('/',(req,res)=>{
     else{
         console.log('not authenticated');
     }
-    res.render('index',{countryNames:countryNames.countries_with_code});
+    res.render('index',{countryNames:countryNames.countries_with_code,req:req});
 })
 //use method for country router 
 app.use('/country',countryRouter)

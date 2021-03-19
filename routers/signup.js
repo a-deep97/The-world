@@ -12,7 +12,7 @@ router.use(bodyParser.urlencoded({extended:true}));
 
 //main route
 router.get('/',(req,res)=>{
-    res.render('signup-page');
+    res.render('signup-page',{req:req});
 });
 
 //post route

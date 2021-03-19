@@ -24,7 +24,7 @@ router.use(bodyParser.urlencoded({extended:true}));
 
 //main route
 router.get('/',(req,res)=>{
-    res.render('login-page');
+    res.render('login-page',{req:req});
 });
 
 //login post route
