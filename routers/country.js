@@ -5,6 +5,8 @@ const mongoose = require('mongoose')
 
 const utilities = require('../public/js/string-utilities')
 const validateSearch=require('../public/js/validate-search')
+const authenticationStatus=require('../authentication-status')
+
 //getting country model
 const Country = require('../models/countryM')
 
@@ -33,15 +35,19 @@ router.get('/',(req,res)=>{
 
 router.get('/:id/edit',async (req,res)=>{
     
-    try{
-        console.log(req.params.id)
-        Country.findById(req.params.id,(err,countryData)=>{
-            res.render('country-edit',{countryData:countryData});
-        });
-    }catch(e){
-        res.redirect('/');
+    if(!authenticationStatus(req,res)){
+        res.redirect('/login');
     }
-    
+    else{
+        try{
+            console.log(req.params.id)
+            Country.findById(req.params.id,(err,countryData)=>{
+                res.render('country-edit',{countryData:countryData});
+            });
+        }catch(e){
+            res.redirect('/');
+        }
+    }
 })
 router.put('/:id',async (req,res)=>{
     

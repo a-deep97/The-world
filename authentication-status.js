@@ -1,5 +1,5 @@
 
-function isAuthenticated(req){
+function isAuthenticated(req,res){
     if(req.isAuthenticated()){
         return true;
     }
