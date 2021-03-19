@@ -12,7 +12,12 @@ router.use(bodyParser.urlencoded({extended:true}));
 
 //main route
 router.get('/',(req,res)=>{
-    res.render('signup-page',{req:req});
+    if(!req.isAuthenticated()){
+        res.render('signup-page',{req:req});
+    }
+    else{
+        res.redirect('/');
+    }
 });
 
 //post route

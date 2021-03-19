@@ -24,7 +24,12 @@ router.use(bodyParser.urlencoded({extended:true}));
 
 //main route
 router.get('/',(req,res)=>{
-    res.render('login-page',{req:req});
+    if(!req.isAuthenticated()){
+        res.render('login-page',{req:req});
+    }
+    else{
+        res.redirect('/');
+    }
 });
 
 //login post route
