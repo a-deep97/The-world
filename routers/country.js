@@ -42,7 +42,7 @@ router.get('/:id/edit',async (req,res)=>{
         try{
             console.log(req.params.id)
             Country.findById(req.params.id,(err,countryData)=>{
-                res.render('country-edit',{countryData:countryData});
+                res.render('country-edit',{countryData:countryData,req:req});
             });
         }catch(e){
             res.redirect('/');
