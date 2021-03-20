@@ -120,10 +120,11 @@ html,body {
 #flag-section{
     display: flex;
     justify-content: center;
-    background: url('../img/background-world1.jpg');
+    /* background: url('../img/background-world1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+    background-color: black;
     height: 1250px;
     padding: 5px 5px;
 }
