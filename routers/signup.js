@@ -3,6 +3,9 @@ const bodyParser = require('body-parser')
 const router = express.Router();
 const bcrypt = require('bcrypt')
 
+//getting user model
+const userM=require('../models/userM')
+
 //getting temporary user variable where user creds stored(only development purpose)
 let USERS=require('../users');
 
@@ -25,12 +28,14 @@ router.post('/',async (req,res)=>{
    try{
        //hashing user password
        const hashedPassword = await bcrypt.hash(req.body.password,12);
-       USERS.push({
-           id: req.body.name+req.body.name,
-           name: req.body.name,
+       const newUser= new userM({
+           _id:req.body.first_name+req.body.last_name+req.body.email,
+           first_name: req.body.first_name,
+           last_name: req.body.last_name,
            email: req.body.email,
            password: hashedPassword
        });
+       newUser.save();
        console.log(USERS);
        console.log('signed up');
        res.redirect('login')

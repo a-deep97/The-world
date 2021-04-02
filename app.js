@@ -4,7 +4,7 @@ require('dotenv').config();
 const express = require('express')
 const mongoose = require('mongoose')
 const methodOverride = require('method-override')
-const passport = require('passport')
+const passport = require('./passport-config')
 const flash=require('express-flash')
 const session=require('express-session')
 
