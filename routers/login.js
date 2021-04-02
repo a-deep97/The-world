@@ -5,21 +5,6 @@ const bodyParser = require('body-parser')
 const router = express.Router();
 const passport=require('passport')
 
-//getting user model
-const userM=require('../models/userM')
-
-//getting temp user file(for development purpose only)
-const USER= require('../users');
-
-/*
-//getting passport config
-const initializePassport = require('../passport-config')
-initializePassport(
-    passport,
-    (email)=>{return userM.findOne({email:email})},
-    (id)=>{return userM.findOne({_id:id})}
-);
-*/
 
 router.use(bodyParser.urlencoded({extended:true}));
 

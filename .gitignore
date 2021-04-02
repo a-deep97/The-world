@@ -1,5 +1,4 @@
 node_modules
 country_info.json
 database
-users.js
 .env

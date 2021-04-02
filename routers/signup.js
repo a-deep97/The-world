@@ -6,10 +6,6 @@ const bcrypt = require('bcrypt')
 //getting user model
 const userM=require('../models/userM')
 
-//getting temporary user variable where user creds stored(only development purpose)
-let USERS=require('../users');
-
-
 router.use(bodyParser.urlencoded({extended:true}));
 
 
