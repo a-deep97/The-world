@@ -65,6 +65,10 @@
                 </div>
                 <div class="fact-container" id="fact-container1">
                     <div class="sub-fact-container" id="sub-fact-cont1">
+                        <div class="facts" id="official-language-container">
+                            <div class="fact-label" id="official-language-label">Official language(s)</div>
+                            <div class="fact-value" id="official-language-value"><%= countryData.official_language %> </div>
+                        </div>
                         <div class="facts" id="capital-container">
                             <div class="fact-label" id="capital-label">Capital city</div>
                             <div class="fact-value" id="capital-value"><%= countryData.capital_city %> </div>
@@ -81,20 +85,25 @@
                             <div class="fact-label" id="land-area-label">Land area (Km sq.)</div>
                             <div class="fact-value" id="land-area-value"><%= countryData.land_area %> </div>
                         </div>
-                        <div class="facts" id="population-container">
-                            <div class="fact-label" id="population-label">Current population</div>
-                            <div class="fact-value" id="population-value"><%= countryData.population %> </div>
+                        <div class="facts" id="water-container">
+                            <div class="fact-label" id="water-label">Water(%)</div>
+                            <div class="fact-value" id="water-value">0</div>
                         </div>
                         <div class="facts" id="currency-container">
                             <div class="fact-label" id="currency-label">Currency</div>
                             <div class="fact-value" id="currency-value"><%= countryData.currency %> </div>
                         </div>
+                        <div class="facts" id="demonym-container">
+                            <div class="fact-label" id="demonym-label">Demonym(s)</div>
+                            <div class="fact-value" id="demonym-value">none</div>
+                        </div>
+                        <div class="facts" id="time-zone-container">
+                            <div class="fact-label" id="time-zone-label">Time zone</div>
+                            <div class="fact-value" id="time-zone-value"><%= countryData.time_zone %> </div>
+                        </div>
                     </div>
                     <div class="sub-fact-container" id="sub-fact-cont2">
-                        <div class="facts" id="motto-container">
-                            <div class="fact-label" id="motto-label">Motto</div>
-                            <div class="fact-value" id="motto-value"><%= countryData.motto %> </div>
-                        </div>
+                        <div class="fact-group-heading" id="government-heading">Government</div>
                         <div class="facts" id="president-container">
                             <div class="fact-label" id="president-label">President</div>
                             <div class="fact-value" id="president-value"><%= countryData.president %> </div>
@@ -107,73 +116,81 @@
                             <div class="fact-label" id="supreme-leader-label">Supreme leader</div>
                             <div class="fact-value" id="supreme-leader-value"><%= countryData.prime_minister %> </div>
                         </div>
-                        <div class="facts" id="time-zone-container">
-                            <div class="fact-label" id="time-zone-label">Time zone</div>
-                            <div class="fact-value" id="time-zone-value"><%= countryData.time_zone %> </div>
+                        <div class="fact-group-heading" id="gdp-heading">GDP</div>
+                        <div class="facts" id="total-nominal-gdp-container">
+                            <div class="fact-label" id="total-nominal-gdp-label">Total (nominal)</div>
+                            <div class="fact-value" id="total-nominal-gdp-value">0</div>
+                        </div>
+                        <div class="facts" id="per-capita-nominal-gdp-container">
+                            <div class="fact-label" id="per-capita-nominal-gdp-label">Per capita (nominal)</div>
+                            <div class="fact-value" id="per-capita-nominal-gdp-value">0</div>
+                        </div>
+                        <div class="facts" id="total-ppp-gdp-container">
+                            <div class="fact-label" id="total-ppp-gdp-label">Total (PPP)</div>
+                            <div class="fact-value" id="total-ppp-gdp-value">0</div>
+                        </div>
+                        <div class="facts" id="per-capita-ppp-gdp-container">
+                            <div class="fact-label" id="per-capita-ppp-gdp-label">Per capita (PPP)</div>
+                            <div class="fact-value" id="per-capita-ppp-gdp-value">0</div>
                         </div>
                     </div>
                     <div class="sub-fact-container" id="sub-fact-cont3">
-                        <div class="facts" id="none">
-                            <div class="fact-label" id="none">Fact Not available</div>
-                            <div class="fact-value" id="none">Data Not available</div>
+                        <div class="fact-group-heading" id="population-heading">Population</div>
+                        <div class="facts" id="current-population-container">
+                            <div class="fact-label" id="current-population-label">Current population(estm.)</div>
+                            <div class="fact-value" id="current-population-value">0</div>
                         </div>
-                        <div class="facts" id="none">
-                            <div class="fact-label" id="none">Fact Not available</div>
-                            <div class="fact-value" id="none">Data Not available</div>
+                        <div class="facts" id="census-population-container">
+                            <div class="fact-label" id="census-population-label">Census population (2000)</div>
+                            <div class="fact-value" id="census-population-value">0</div>
                         </div>
-                        <div class="facts" id="none">
-                            <div class="fact-label" id="none">Fact Not available</div>
-                            <div class="fact-value" id="none">Data Not available</div>
+                        <div class="facts" id="population-density-container">
+                            <div class="fact-label" id="population-density-label">population density</div>
+                            <div class="fact-value" id="population-density-value">0</div>
                         </div>
-                        <div class="facts" id="none">
-                            <div class="fact-label" id="none">Fact Not available</div>
-                            <div class="fact-value" id="none">Data Not available</div>
+                        <div class="facts" id="growth-rate-container">
+                            <div class="fact-label" id="growth-rate-label">Growth rate</div>
+                            <div class="fact-value" id="growth-rate-value">0</div>
                         </div>
-                        <div class="facts" id="none">
-                            <div class="fact-label" id="none">Fact Not available</div>
-                            <div class="fact-value" id="none">Data Not available</div>
+                        <div class="fact-separator"></div>
+                        <div class="facts" id="gini-container">
+                            <div class="fact-label" id="gini-label">Gini index</div>
+                            <div class="fact-value" id="gini-value">none</div>
                         </div>
-                        <div class="facts" id="none">
-                            <div class="fact-label" id="none">Fact Not available</div>
-                            <div class="fact-value" id="none">Data Not available</div>
+                        <div class="facts" id="hdi-container">
+                            <div class="fact-label" id="hdi-label">HDI</div>
+                            <div class="fact-value" id="hdi-value">HDI</div>
+                        </div>
+                        <div class="facts" id="calling-code-container">
+                            <div class="fact-label" id="calling-code-label">Calling code</div>
+                            <div class="fact-value" id="calling-code-value">+0</div>
+                        </div>
+                        <div class="facts" id="driving-side-container">
+                            <div class="fact-label" id="driving-side-label">Driving side</div>
+                            <div class="fact-value" id="driving-side-value">left</div>
                         </div>
                     </div>
                 </div>
-                <!-- extra container hidden -->
-                <!-- <div class="fact-container" id="fact-container2">
-                    <div class="sub-fact-container" id="sub-fact-cont3">
-                        <div class="facts">
-                            <div class="facts" id="container1">
-                                <div class="fact-label" id="label1">Fact not available</div>
-                                <div class="fact-value" id="value1">Value not available</div>
-                            </div>
+                <div class="fact-container" id="fact-container2">
+                    <div class="sub-fact-container" id="sub-fact-cont4">
+                        <div class="facts" id="religion-container">
+                            <div class="fact-label" id="religion-label">Religion(s)</div>
+                            <div class="fact-value" id="religion-value"><%= countryData.religion %> </div>
                         </div>
-                        <div class="facts">
-                            <div class="facts" id="container2">
-                                <div class="fact-label" id="label2">Fact not available</div>
-                                <div class="fact-value" id="value2">Value not available</div>
-                            </div>
+                        <div class="facts" id="ethinic-groups-container">
+                            <div class="fact-label" id="ethinic-groups-label">Ethinic groups</div>
+                            <div class="fact-value" id="ethinic-groups-value"><%= countryData.ethinic_groups %> </div>
                         </div>
-                        <div class="facts">
-                            <div class="facts" id="container3">
-                                <div class="fact-label" id="label3">Fact not available</div>
-                                <div class="fact-value" id="value3">Value not available</div>
-                            </div>
+                        <div class="facts" id="membership-container">
+                            <div class="fact-label" id="membership-label">Membership(s)</div>
+                            <div class="fact-value" id="membership-value"><%= countryData.membership %> </div>
                         </div>
-                        <div class="facts">
-                            <div class="facts" id="container4">
-                                <div class="fact-label" id="label4">Fact not available</div>
-                                <div class="fact-value" id="value4">Value not available</div>
-                            </div>
-                        </div>
-                        <div class="facts">
-                            <div class="facts" id="container5">
-                                <div class="fact-label" id="label5">Fact not available</div>
-                                <div class="fact-value" id="value5">Value not available</div>
-                            </div>
+                        <div class="facts" id="formation-container">
+                            <div class="fact-label" id="formation-label">Formation</div>
+                            <div class="fact-value" id="formation-value"><%= countryData.formation %> </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </article> 
             <aside id="right-aside">
             </aside>
