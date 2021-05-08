@@ -111,6 +111,9 @@ const countrySchema = mongoose.Schema({
     },
     national_song:{
         type:String
+    },
+    population_growth_rate:{
+        type: String
     }
 })
 
