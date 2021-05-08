@@ -202,11 +202,22 @@ html,body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 95%;
+    width: 90%;
+    height: 90%;
     /* background-color: cadetblue; */
     /* background-color: black; */
     text-align: center;
+}
+#national-flag-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 95%;
+}
+#national-flag-img img{
+    max-width: 85%;
+    max-height: 85%;
 }
 #national-emblem-container{
     display: flex;
@@ -218,11 +229,6 @@ html,body {
     /* background-color: black; */
     text-align: center;
 }
-#flag-container img{
-    max-width: 100%;
-    max-height: 100%;
-}
-
 #national-anthem-container{
     display: flex;
     width: 95%;
