@@ -45,13 +45,13 @@
                         </div>
                         <div class="facts" id="motto-container">
                             <div class="fact-label" id="motto-label">Motto : </div>
-                            <div class="fact-value" id="motto-value"></div>
+                            <div class="fact-value" id="motto-value"><%= countryData.motto %> </div>
                         </div>
                         <div id="national-anthem-container">
                             <div class="facts" id="national-anthem-name-container">
                                 <div class="fact-label" id="national-anthem-label">National Anthem :</div>
-                                <div class="fact-value" id="national-anthem-local-value"></div>
-                                <div class="fact-value" id="national-anthem-english-value"></div>
+                                <div class="fact-value" id="national-anthem-local-value"><%= countryData.national_anthem_local %> </div>
+                                <div class="fact-value" id="national-anthem-english-value"><%= countryData.national_anthem_english %> </div>
                             </div>
                             <div id="national-anthem-media">
                                 <div id="anthem-play-button"></div>
@@ -61,7 +61,7 @@
                         </div>
                         <div class="facts" id="national-song-container">
                             <div class="fact-label" id="national-song-label">National Song :</div>
-                            <div class="fact-value" id="national-song-value"></div>
+                            <div class="fact-value" id="national-song-value"><%= countryData.national_song %> </div>
                         </div>
                     </div>
                     <div id="map-container">
@@ -97,7 +97,7 @@
                         </div>
                         <div class="facts" id="water-container">
                             <div class="fact-label" id="water-label">Water(%)</div>
-                            <div class="fact-value" id="water-value">0</div>
+                            <div class="fact-value" id="water-value"><%= countryData.water %> </div>
                         </div>
                         <div class="facts" id="currency-container">
                             <div class="fact-label" id="currency-label">Currency</div>
@@ -105,7 +105,7 @@
                         </div>
                         <div class="facts" id="demonym-container">
                             <div class="fact-label" id="demonym-label">Demonym(s)</div>
-                            <div class="fact-value" id="demonym-value">none</div>
+                            <div class="fact-value" id="demonym-value"><%= countryData.demonym %> </div>
                         </div>
                         <div class="facts" id="time-zone-container">
                             <div class="fact-label" id="time-zone-label">Time zone</div>
@@ -124,60 +124,60 @@
                         </div>
                         <div class="facts" id="supreme-leader-container">
                             <div class="fact-label" id="supreme-leader-label">Supreme leader</div>
-                            <div class="fact-value" id="supreme-leader-value"><%= countryData.prime_minister %> </div>
+                            <div class="fact-value" id="supreme-leader-value"><%= countryData.supreme_leader %> </div>
                         </div>
                         <div class="fact-group-heading" id="gdp-heading">GDP</div>
                         <div class="facts" id="total-nominal-gdp-container">
                             <div class="fact-label" id="total-nominal-gdp-label">Total (nominal)</div>
-                            <div class="fact-value" id="total-nominal-gdp-value">0</div>
+                            <div class="fact-value" id="total-nominal-gdp-value"><%= countryData.GDP_nominal[0] %> </div>
                         </div>
                         <div class="facts" id="per-capita-nominal-gdp-container">
                             <div class="fact-label" id="per-capita-nominal-gdp-label">Per capita (nominal)</div>
-                            <div class="fact-value" id="per-capita-nominal-gdp-value">0</div>
+                            <div class="fact-value" id="per-capita-nominal-gdp-value"><%= countryData.GDP_nominal[1] %></div>
                         </div>
                         <div class="facts" id="total-ppp-gdp-container">
                             <div class="fact-label" id="total-ppp-gdp-label">Total (PPP)</div>
-                            <div class="fact-value" id="total-ppp-gdp-value">0</div>
+                            <div class="fact-value" id="total-ppp-gdp-value"><%= countryData.GDP_PPP[0] %></div>
                         </div>
                         <div class="facts" id="per-capita-ppp-gdp-container">
                             <div class="fact-label" id="per-capita-ppp-gdp-label">Per capita (PPP)</div>
-                            <div class="fact-value" id="per-capita-ppp-gdp-value">0</div>
+                            <div class="fact-value" id="per-capita-ppp-gdp-value"><%= countryData.GDP_PPP[1] %></div>
                         </div>
                     </div>
                     <div class="sub-fact-container" id="sub-fact-cont3">
                         <div class="fact-group-heading" id="population-heading">Population</div>
                         <div class="facts" id="current-population-container">
                             <div class="fact-label" id="current-population-label">Current population(estm.)</div>
-                            <div class="fact-value" id="current-population-value">0</div>
+                            <div class="fact-value" id="current-population-value"><%= countryData.estimate_population %> </div>
                         </div>
                         <div class="facts" id="census-population-container">
                             <div class="fact-label" id="census-population-label">Census population (2000)</div>
-                            <div class="fact-value" id="census-population-value">0</div>
+                            <div class="fact-value" id="census-population-value"><%= countryData.last_census_population %></div>
                         </div>
                         <div class="facts" id="population-density-container">
                             <div class="fact-label" id="population-density-label">population density</div>
-                            <div class="fact-value" id="population-density-value">0</div>
+                            <div class="fact-value" id="population-density-value"><%= countryData.population_density %></div>
                         </div>
                         <div class="facts" id="growth-rate-container">
                             <div class="fact-label" id="growth-rate-label">Growth rate</div>
-                            <div class="fact-value" id="growth-rate-value">0</div>
+                            <div class="fact-value" id="growth-rate-value"><%= countryData.population_growth_rate %></div>
                         </div>
                         <div class="fact-separator"></div>
                         <div class="facts" id="gini-container">
                             <div class="fact-label" id="gini-label">Gini index</div>
-                            <div class="fact-value" id="gini-value">none</div>
+                            <div class="fact-value" id="gini-value"><%= countryData.gini %></div>
                         </div>
                         <div class="facts" id="hdi-container">
                             <div class="fact-label" id="hdi-label">HDI</div>
-                            <div class="fact-value" id="hdi-value">HDI</div>
+                            <div class="fact-value" id="hdi-value"><%= countryData.HDI %></div>
                         </div>
                         <div class="facts" id="calling-code-container">
                             <div class="fact-label" id="calling-code-label">Calling code</div>
-                            <div class="fact-value" id="calling-code-value">+0</div>
+                            <div class="fact-value" id="calling-code-value"><%= countryData.calling_code %> </div>
                         </div>
                         <div class="facts" id="driving-side-container">
                             <div class="fact-label" id="driving-side-label">Driving side</div>
-                            <div class="fact-value" id="driving-side-value">left</div>
+                            <div class="fact-value" id="driving-side-value"><%= countryData.driving_side %> </div>
                         </div>
                     </div>
                 </div>

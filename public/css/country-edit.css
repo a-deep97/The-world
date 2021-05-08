@@ -19,7 +19,8 @@ html,body {
 #main-section{
     display: flex;
     flex-direction: column;
-    height: 950px;
+    height: 1150px;
+    flex-direction: column;
     background: url('../img/background-world2.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -40,7 +41,7 @@ html,body {
     display: flex;
     flex-direction: row;
     /* background-color: burlywood; */
-    height: 900px;
+    height: 1050px;
 }
 #left-aside{
     display: flex;
@@ -98,16 +99,19 @@ html,body {
 }
 #main-article{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     /* background-color: springgreen; */
+    /* background-color: white; */
+    height: 100%;
     width: 100%;
-    padding: 10px 10px;
 }
 #main-article form{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    height: 95%;
     font-family: var(--font1);
 }
 #submit-button{
@@ -118,8 +122,8 @@ html,body {
     color: white;
     font-size: 1.2rem;
     width: 10%;
-    height: 5%;
     margin: 3px;
+    padding: 3px 3px;
     font-family: var(--font1);
 }
 #topic{
@@ -129,21 +133,21 @@ html,body {
     flex-direction: row;
     justify-content: flex-start;
     padding: 5px 5px;
-    height: 350px;
+    height: 500px;
     border-radius: 10px;
 }
 #identity-container{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 95%;
     height: 100%;
 }
 #name-container{
     display: flex;
     width: 95%;
-    height: 95%;
+    height: 90%;
     flex-direction: column;
     margin: 3px 3px;
     /* background-color: tomato; */
@@ -157,16 +161,18 @@ html,body {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 3px 3px;
+    margin: 0px 3px;
     /* background-color: cadetblue; */
     /* background-color: black; */
     padding: 0px 0px;
 }
 #primary-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-size: 3rem;
     font-family: var(--font1);
-    padding: 10px 10px;
 }
 #official-name-container{
     display: flex;
@@ -178,96 +184,95 @@ html,body {
     /* background-color: black; */
 }
 #official-name{
-    text-align: center;
-    padding: 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: var(--font1);
+}
+
+#symbol-container{
+    display: flex;
+    width: 95%;
+    height: 90%;
+    margin: 0px 3px;
+    /* background-color: tomato; */
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-}   
-#national-media-container{
+    border: solid white 1px;
+    border-radius: 10px;
+
+}
+#national-flag-container{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 95%;
-    margin: 3px 3px;
-}   
-#national-symbol-container{
+    width: 90%;
+    height: 90%;
+    /* background-color: cadetblue; */
+    /* background-color: black; */
+    text-align: center;
+}
+#national-flag-img{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 95%;
     height: 95%;
-    /* background-color: tomato; */
-    background-color: rgba(0, 0, 0, 0.5);
 }
-#flag-container{
+#national-flag-img img{
+    max-width: 85%;
+    max-height: 85%;
+}
+#national-emblem-container{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 95%;
-    padding: 5px 5px;
-    /* background-color: cadetblue; */
-    /* background-color: black; */
-    text-align: center;
-}
-#flag-container img{
-    max-width: 100%;
-    max-height: 100%;
-}
-#emblem-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 95%;
-    padding: 5px 5px;
     /* background-color: cadetblue; */
     /* background-color: black; */
     text-align: center;
 }
 #national-anthem-container{
     display: flex;
+    width: 95%;
+    height: 50%;
+    margin: 0px 3px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    /* background-color: tomato; */
     background-color: rgba(0, 0, 0, 0.5);
-    width: 95%;
-    height: 95%;
+    color: white;
+    border: solid white 1px;
+    border-radius: 10px;
+}
+#motto-container{
+    height: 25%;
+}
+#motto-label{
+
 }
 #national-anthem-name-container{
-    display: flex;
-    width: 100%;
-    height: 100%;
+    height: 50%;
 }
-/*
-#anthem-name-local{
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-#anthem-name-english{
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-*/
-#national-anthem-audio-container{
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-/*
-#anthem-play-button{
+#national-anthem-label{
 
 }
-#status-anthem-status-bar{
+#national-anthem-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height:70%; 
+}
+#national-song-container{
+    height: 25%;
+}
+#national-song-label{
 
 }
-#anthem-time-status{
 
-} */
 #map-container{
     display: flex;
     flex-direction: column;
@@ -293,7 +298,7 @@ html,body {
     align-items: center;
     /* background-color: blue; */
     background-color: rgba(0, 0, 0, 0.5);
-    height: 250px;
+    height: 200px;
     margin: 3px;
     padding: 5px;
     border-radius: 10px;
@@ -311,82 +316,102 @@ html,body {
     padding: 10px 10px;
     font-family: var(--font1);
 }
-#fact-container1{
+.fact-container{
     display: flex;
     flex-direction: row;
-    height: 200px;
     margin: 3px;
     /* background-color: blue; */
     background-color: rgba(0, 0, 0, 0.5);
     font-family: var(--font1);
+}
+#fact-container1{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    /* background-color: blue; */
+}
+#fact-container2{
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    /* background-color: blue; */
 }
 .sub-fact-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 95%;
+    margin: 3px;
 }
 #sub-fact-cont1{
-    width: 100%;
-    margin: 3px;
+    /* width: 100%;
+    margin: 3px; */
     /* background-color: tomato; */
     /* background-color: rgba(0, 0, 0, 0.5); */
-    border: solid white 2px;
 }
 #sub-fact-cont2{
-    width: 100%;
-    margin: 3px;
+    /* width: 100%;
+    margin: 3px; */
     /* background-color: tomato; */
     /* background-color: rgba(0, 0, 0, 0.5); */
-    border: solid white 2px;
-}
-
-#fact-container2{
-    display: flex;
-    justify-content: center;
-    height: 200px;
-    margin: 3px;
-    /* background-color: blue; */
-    background-color: rgba(0, 0, 0, 0.5);
-    font-family: var(--font1);
 }
 #sub-fact-cont3{
+    /* width: 100%;
+    margin: 3px; */
+    /* background-color: tomato; */
+    /* background-color: black; */
+}
+#sub-fact-cont4{
     width: 100%;
     margin: 3px;
     /* background-color: tomato; */
     /* background-color: black; */
-    border: solid 2px white;
 }
 .facts{
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
+    margin: 3px 3px;
+    height: 90%;
+   }
+.fact-group-heading{
+    display: flex;
+    width: 95%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 .fact-label{
-    text-align: center;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
-    margin: 2px;
+    font-size: 0.8rem;
+    margin: 2px 10px;
+    padding: 0px 20px;
     /* background-color: yellow;  */
     background-color: rgba(0, 0, 0, 0.5);
-    color: white; 
+    color: white;
 }
 .fact-value{
-    text-align: center;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    margin: 2px 10px;
+    padding: 0px 10px;
     /* background-color: yellow; */
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); 
     color: white;
-    margin: 2px;
-
 }
+.fact-separator{
+    display: flex;
+    width: 95%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
 #right-aside{
     display: flex;
     width: 10%;

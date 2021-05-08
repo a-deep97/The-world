@@ -2,38 +2,48 @@
     <div id="identity-container">
         <div id="name-container">
             <div id="primary-name-container"> 
-                <div id="primary-name" ><%= countryData.name %> </div>
+                <div id="primary-name"><%= countryData.name %> </div>
             </div>
             <div id="official-name-container">
-                <input id="official-name" type="text" name="official_name" value="<%= countryData.official_name %> ">
+                <input class="fact-value" id="official-name" type="text" name="official_name" value="<%= countryData.official_name %> ">
             </div>
         </div>
-        <div id="national-media-container">
-            <div id="national-symbol-container">
-                <div id="flag-container">
+        <div id="symbol-container">
+            <div id="national-flag-container">
+                <div id="national-flag-img">
                     <img src="/img/flags2/<%= countryData.code.toLowerCase() %>.png" alt="">
                 </div>
-                <div id="emblem-container">
-                    <img src="" alt="">
-                </div>
             </div>
-            <div id="national-anthem-container">
-                <div id="national-anthem-name-container">
-                    <div id="anthem-name-local"></div>
-                    <div id="anthem-name-english"></div>
-                </div>
-                <div id="national-anthem-audio-container">
-                    <div id="anthem-play-button"></div>
-                    <div id="status-anthem-status-bar"></div>
-                    <div id="anthem-time-status"></div>
-                </div>
+            <div id="national-emblem-container">
+                <div id="emblem-img"></div>
+                <div id="emblem-name"></div>
             </div>
+        </div>
+        <div class="facts" id="motto-container">
+            <div class="fact-label" id="motto-label">Motto : </div>
+            <input class="fact-value" id="motto" type="text" name="motto" value="<%= countryData.motto %> ">
+        </div>
+        <div id="national-anthem-container">
+            <div class="facts" id="national-anthem-name-container">
+                <div class="fact-label" id="national-anthem-label">National Anthem :</div>
+                <input class="fact-value" id="national-anthem-local-value" type="text" name="national_anthem_local" value="<%= countryData.national_anthem_local %> ">
+                <input class="fact-value" id="national-anthem-english-value" type="text" name="national_anthem_english" value="<%= countryData.national_anthem_english %> ">
+            </div>
+            <div id="national-anthem-media">
+                <div id="anthem-play-button"></div>
+                <div id="status-anthem-status-bar"></div>
+                <div id="anthem-time-status"></div>
+            </div>
+        </div>
+        <div class="facts" id="national-song-container">
+            <div class="fact-label" id="national-song-label">National Song :</div>
+            <input class="fact-value" id="national-song-value" type="text" name="national_song" value="<%= countryData.national_song %> ">
         </div>
     </div>
     <div id="map-container">
         <div id="country-on-gmap">
-            <label class="fact-label" for="capital-latitude">Latitude of the capital city: <input class="fact-value" id="capital-latitude" type="text" name="capital-latitude" value="<%= countryData.capital_coordinates[0] %> "></label>
-            <label class="fact-label" for="capital-longitude">Longitude of the capital city: <input class="fact-value" id="capital-longitude" type="text" name="capital-longitude" value="<%= countryData.capital_coordinates[1] %> "></label>
+            <label class="fact-label" for="capital-latitude">Latitude of the capital city: <input class="fact-value" id="capital-latitude" type="text" name="capital_latitude" value="<%= countryData.capital_coordinates[0] %> "></label>
+            <label class="fact-label" for="capital-longitude">Longitude of the capital city: <input class="fact-value" id="capital-longitude" type="text" name="capital_longitude" value="<%= countryData.capital_coordinates[1] %> "></label>
         </div>
     </div>
 </div>
@@ -42,9 +52,13 @@
 </div>
 <div class="fact-container" id="fact-container1">
     <div class="sub-fact-container" id="sub-fact-cont1">
-        <div class="facts" id="capital-container">
-            <div class="fact-label" id="capital-label">Capital city</div>
-            <input class="fact-value" id="capital-value" type="text" name="capital_city" value="<%= countryData.capital_city %> ">
+        <div class="facts" id="official-language-container">
+            <div class="fact-label" id="official-language-label">Official language(s)</div>
+            <input class="fact-value" id="official-language-value" type="text" name="official_languages" value="<%= countryData.official_language %> ">
+        </div>
+        <div class="facts" id="capital-city-container">
+            <div class="fact-label" id="capital-city-label">Capital city</div>
+            <input class="fact-value" id="capital-city-value" type="text" name="capital_city" value="<%= countryData.capital_city %> ">
         </div>
         <div class="facts" id="largest-city-container">
             <div class="fact-label" id="largest-city-label">Largest city</div>
@@ -58,20 +72,25 @@
             <div class="fact-label" id="land-area-label">Land area (Km sq.)</div>
             <input class="fact-value" id="land-area-value" type="text" name="land_area" value="<%= countryData.land_area %> ">
         </div>
-        <div class="facts" id="population-container">
-            <div class="fact-label" id="population-label">Current population</div>
-            <input class="fact-value" id="population-value" type="text" name="population" value="<%= countryData.population %> ">
+        <div class="facts" id="water-container">
+            <div class="fact-label" id="water-label">Water(%)</div>
+            <input class="fact-value" id="water-value" type="text" name="water" value="<%= countryData.water %> ">
         </div>
         <div class="facts" id="currency-container">
             <div class="fact-label" id="currency-label">Currency</div>
             <input class="fact-value" id="currency-value" type="text" name="currency" value="<%= countryData.currency %> ">
         </div>
+        <div class="facts" id="demonym-container">
+            <div class="fact-label" id="demonym-label">Demonym(s)</div>
+            <input class="fact-value" id="demonym-value" type="text" name="demonym" value="<%= countryData.demonym %> ">
+        </div>
+        <div class="facts" id="time-zone-container">
+            <div class="fact-label" id="time-zone-label">Time zone</div>
+            <input class="fact-value" id="time-zone-value" type="text" name="time_zone" value="<%= countryData.time_zone %> ">
+        </div>
     </div>
     <div class="sub-fact-container" id="sub-fact-cont2">
-        <div class="facts" id="motto-container">
-            <div class="fact-label" id="motto-label">Motto</div>
-            <input class="fact-value" id="motto-value" type="text" name="motto" value="<%= countryData.motto %> ">
-        </div>
+        <div class="fact-group-heading" id="government-heading">Government</div>
         <div class="facts" id="president-container">
             <div class="fact-label" id="president-label">President</div>
             <input class="fact-value" id="president-value" type="text" name="president" value="<%= countryData.president %> ">
@@ -84,70 +103,78 @@
             <div class="fact-label" id="supreme-leader-label">Supreme leader</div>
             <input class="fact-value" id="supreme-leader-value" type="text" name="supreme_leader" value="<%= countryData.supreme_leader %> ">
         </div>
-        <div class="facts" id="time-zone-container">
-            <div class="fact-label" id="time-zone-label">Time zone</div>
-            <input class="fact-value" id="time-zone-value" type="text" name="time_zone" value="<%= countryData.time_zone %> ">
+        <div class="fact-group-heading" id="gdp-heading">GDP</div>
+        <div class="facts" id="total-nominal-gdp-container">
+            <div class="fact-label" id="total-nominal-gdp-label">Total (nominal)</div>
+            <input class="fact-value" id="total-nominal-gdp-value" type="text" name="total_nominal_gdp" value="<%= countryData.GDP_nominal[0] %> ">
+        </div>
+        <div class="facts" id="per-capita-nominal-gdp-container">
+            <div class="fact-label" id="per-capita-nominal-gdp-label">Per capita (nominal)</div>
+            <input class="fact-value" id="per-capita-nominal-gdp-value" type="text" name="per_capita_nominal_gdp" value="<%= countryData.GDP_nominal[1] %> ">
+        </div>
+        <div class="facts" id="total-ppp-gdp-container">
+            <div class="fact-label" id="total-ppp-gdp-label">Total (PPP)</div>
+            <input class="fact-value" id="total-ppp-gdp-value" type="text" name="total_ppp_gdp" value="<%= countryData.GDP_PPP[0] %> ">
+        </div>
+        <div class="facts" id="per-capita-ppp-gdp-container">
+            <div class="fact-label" id="per-capita-ppp-gdp-label">Per capita (PPP)</div>
+            <input class="fact-value" id="per-capita-ppp-gdp-value" type="text" name="per_capital_ppp_gdp" value="<%= countryData.GDP_PPP[1] %> ">
         </div>
     </div>
     <div class="sub-fact-container" id="sub-fact-cont3">
-        <div class="facts" id="none">
-            <div class="fact-label" id="none">Fact Not available</div>
-            <div class="fact-value" id="none">Data Not available</div>
+        <div class="fact-group-heading" id="population-heading">Population</div>
+        <div class="facts" id="current-population-container">
+            <div class="fact-label" id="current-population-label">Current population(estm.)</div>
+            <input class="fact-value" id="estimate-population-value" type="text" name="estimate_population" value="<%= countryData.estimate_population %> ">
         </div>
-        <div class="facts" id="none">
-            <div class="fact-label" id="none">Fact Not available</div>
-            <div class="fact-value" id="none">Data Not available</div>
+        <div class="facts" id="census-population-container">
+            <div class="fact-label" id="census-population-label">Census population (2000)</div>
+            <input class="fact-value" id="census-population-value" type="text" name="census_population" value="<%= countryData.last_census_population %> ">
         </div>
-        <div class="facts" id="none">
-            <div class="fact-label" id="none">Fact Not available</div>
-            <div class="fact-value" id="none">Data Not available</div>
+        <div class="facts" id="population-density-container">
+            <div class="fact-label" id="population-density-label">population density</div>
+            <input class="fact-value" id="population-density-value" type="text" name="population_density" value="<%= countryData.population_density %> ">
         </div>
-        <div class="facts" id="none">
-            <div class="fact-label" id="none">Fact Not available</div>
-            <div class="fact-value" id="none">Data Not available</div>
+        <div class="facts" id="growth-rate-container">
+            <div class="fact-label" id="growth-rate-label">Growth rate</div>
+            <input class="fact-value" id="growth-rate-value" type="text" name="population_growth_rate" value="<%= countryData.population_growth_rate %> ">
         </div>
-        <div class="facts" id="none">
-            <div class="fact-label" id="none">Fact Not available</div>
-            <div class="fact-value" id="none">Data Not available</div>
+        <div class="fact-separator"></div>
+        <div class="facts" id="gini-container">
+            <div class="fact-label" id="gini-label">Gini index</div>
+            <input class="fact-value" id="gini-value" type="text" name="gini" value="<%= countryData.gini %> ">
         </div>
-        <div class="facts" id="none">
-            <div class="fact-label" id="none">Fact Not available</div>
-            <div class="fact-value" id="none">Data Not available</div>
+        <div class="facts" id="hdi-container">
+            <div class="fact-label" id="hdi-label">HDI</div>
+            <input class="fact-value" id="hdi-value" type="text" name="hdi" value="<%= countryData.HDI %> ">
+        </div>
+        <div class="facts" id="calling-code-container">
+            <div class="fact-label" id="calling-code-label">Calling code</div>
+            <input class="fact-value" id="calling-code-value" type="text" name="calling_code" value="<%= countryData.calling_code %> ">
+        </div>
+        <div class="facts" id="driving-side-container">
+            <div class="fact-label" id="driving-side-label">Driving side</div>
+            <input class="fact-value" id="driving-side-value" type="text" name="driving_side" value="<%= countryData.driving_side %> ">
         </div>
     </div>
 </div>
-<!-- Extra container hidden -->
-<!-- <div class="fact-container" id="fact-container2">
-    <div class="sub-fact-container" id="sub-fact-cont3">
-        <div class="facts">
-            <div class="facts" id="container1">
-                <div class="fact-label" id="label1">Fact not available</div>
-                <div class="fact-value" id="value1">Value not available</div>
-            </div>
+<div class="fact-container" id="fact-container2">
+    <div class="sub-fact-container" id="sub-fact-cont4">
+        <div class="facts" id="religion-container">
+            <div class="fact-label" id="religion-label">Religion(s)</div>
+            <input class="fact-value" id="religion-value" type="text" name="religion" value="<%= countryData.religion %> ">
         </div>
-        <div class="facts">
-            <div class="facts" id="container2">
-                <div class="fact-label" id="label2">Fact not available</div>
-                <div class="fact-value" id="value2">Value not available</div>
-            </div>
+        <div class="facts" id="ethinic-groups-container">
+            <div class="fact-label" id="ethinic-groups-label">Ethinic groups</div>
+            <input class="fact-value" id="ethinic-groups-value" type="text" name="ethinic_groups" value="<%= countryData.ethinic_groups %> ">
         </div>
-        <div class="facts">
-            <div class="facts" id="container3">
-                <div class="fact-label" id="label3">Fact not available</div>
-                <div class="fact-value" id="value3">Value not available</div>
-            </div>
+        <div class="facts" id="membership-container">
+            <div class="fact-label" id="membership-label">Membership(s)</div>
+            <input class="fact-value" id="membership-value" type="text" name="membership" value="<%= countryData.membership %> ">
         </div>
-        <div class="facts">
-            <div class="facts" id="container4">
-                <div class="fact-label" id="label4">Fact not available</div>
-                <div class="fact-value" id="value4">Value not available</div>
-            </div>
-        </div>
-        <div class="facts">
-            <div class="facts" id="container5">
-                <div class="fact-label" id="label5">Fact not available</div>
-                <div class="fact-value" id="value5">Value not available</div>
-            </div>
+        <div class="facts" id="formation-container">
+            <div class="fact-label" id="formation-label">Formation</div>
+            <input class="fact-value" id="formation-value" type="text" name="formation" value="<%= countryData.formation %> ">
         </div>
     </div>
-</div> -->
+</div>

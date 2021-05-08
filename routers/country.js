@@ -60,7 +60,6 @@ router.put('/:id',async (req,res)=>{
         countryData.largest_city=utilities.removeExtraSpaces(data.largest_city);
         countryData.total_area=utilities.removeExtraSpaces(data.total_area);
         countryData.land_area=utilities.removeExtraSpaces(data.land_area);
-        countryData.population=utilities.removeExtraSpaces(data.population);
         countryData.motto=utilities.removeExtraSpaces(data.motto);
         countryData.president=utilities.removeExtraSpaces(data.president);
         countryData.prime_minister=utilities.removeExtraSpaces(data.prime_minister);
@@ -69,7 +68,31 @@ router.put('/:id',async (req,res)=>{
         countryData.description=utilities.removeExtraSpaces(data.description);
         countryData.official_name=utilities.removeExtraSpaces(data.official_name);
         countryData.currency=utilities.removeExtraSpaces(data.currency);
-    
+        countryData.capital_coordinates[0]=utilities.removeExtraSpaces(data.capital_latitude);
+        countryData.capital_coordinates[1]=utilities.removeExtraSpaces(data.capital_longitude);
+        countryData.water=utilities.removeExtraSpaces(data.water);
+        countryData.estimate_population=utilities.removeExtraSpaces(data.estimate_population);
+        countryData.last_census_population=utilities.removeExtraSpaces(data.census_population);
+        countryData.GDP_PPP[0]=utilities.removeExtraSpaces(data.total_ppp_gdp);
+        countryData.GDP_PPP[1]=utilities.removeExtraSpaces(data.per_capital_ppp_gdp);
+        countryData.GDP_nominal[0]=utilities.removeExtraSpaces(data.total_nominal_gdp);
+        countryData.GDP_nominal[1]=utilities.removeExtraSpaces(data.per_capita_nominal_gdp);
+        countryData.driving_side=utilities.removeExtraSpaces(data.driving_side);
+        countryData.calling_code=utilities.removeExtraSpaces(data.calling_code);
+        countryData.population_density=utilities.removeExtraSpaces(data.population_density);
+        countryData.population_growth_rate=utilities.removeExtraSpaces(data.population_growth_rate);
+        countryData.demonym=utilities.removeExtraSpaces(data.demonym);
+        countryData.gini=utilities.removeExtraSpaces(data.gini);
+        countryData.HDI=utilities.removeExtraSpaces(data.hdi);
+        countryData.religion=utilities.removeExtraSpaces(data.religion);
+        countryData.membership=utilities.removeExtraSpaces(data.membership);
+        countryData.official_languages=utilities.removeExtraSpaces(data.official_languages);
+        countryData.formation=utilities.removeExtraSpaces(data.formation);
+        countryData.ethinic_groups=utilities.removeExtraSpaces(data.ethinic_groups);
+        countryData.national_anthem_local=utilities.removeExtraSpaces(data.national_anthem_local);
+        countryData.national_anthem_english=utilities.removeExtraSpaces(data.national_anthem_english);
+        countryData.national_song=utilities.removeExtraSpaces(data.national_song);
+
         //
         await countryData.save();
         res.redirect('/country?name='+countryData.name);
