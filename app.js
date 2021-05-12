@@ -87,7 +87,7 @@ app.delete('/logout',(req,res)=>{
 })
 
 // app listening to port 3000
-const PORT=80||process.env.PORT;
+const PORT=process.env.PORT||3000;
 app.listen(PORT,()=>{
     console.log('application listening at port: '+PORT);
 });
