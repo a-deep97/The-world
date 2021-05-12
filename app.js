@@ -23,11 +23,13 @@ const signupRouter=require('./routers/signup')
 //aquiring express function 
 const app= express()
 
-// database path url
+/*
+// local database path url
 const DBurl='mongodb://127.0.0.1:27017/the_world'
+*/
 
 //connected to database
-mongoose.connect(DBurl,{useUnifiedTopology: true,useNewUrlParser:true})
+mongoose.connect(process.env.DB_URL,{useUnifiedTopology: true,useNewUrlParser:true})
 
 //engine type setup
 app.set('view engine','ejs')
@@ -54,7 +56,7 @@ app.use(passport.session());
 //checking database connection validity
 const db= mongoose.connection
 db.once('open',()=>{
-    console.log('data base connected:',DBurl);
+    console.log('data base connected:',process.env.DB_URL);
 })
 
 
