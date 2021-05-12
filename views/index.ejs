@@ -30,10 +30,11 @@
             <div class="row">
                 <% for(col=0;col<13;col++){ %>
                 <%     var countryName=countryNames[count].name %>
-                <%     var countryCode=countryNames[count].code%> 
+                <%     var countryCode=countryNames[count].code %>
+                <%     countryCode=countryCode.toLowerCase() %>  
                 <%     count++; %>
                 <div class="column" id="afghansiatan"  onclick="location.href='./country?name=<%= countryName %> '">
-                    <img src="img/flags/<%= countryCode %>.PNG" alt="" >
+                    <img src="img/flags/<%= countryCode %>.png" alt="" >
                 </div>
                 <% } %>  
             </div>
