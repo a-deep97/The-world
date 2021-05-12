@@ -13,7 +13,7 @@ var globe_sketch=function(sketch){
         canvas.elt.style.display="block";
     };
     sketch.preload=function(){
-        img = sketch.loadImage('../../../img/globe-day-texture-2k.JPG');    
+        img = sketch.loadImage('../../../img/globe-day-texture-2k.jpg');    
     };
     sketch.draw=function(){
         sketch.angleMode(sketch.DEGREES);

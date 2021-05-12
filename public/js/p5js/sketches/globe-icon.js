@@ -13,7 +13,7 @@ var globe_icon_sketch=function(sketch){
       canvas.elt.style.display="block";
   };
   sketch.preload=function(){
-      img = sketch.loadImage('../../../img/globe-texture2.JPG');    
+      img = sketch.loadImage('../../../img/globe-texture2.jpg');    
   };
   sketch.draw=function(){
       sketch.background(255,255,255,0);
