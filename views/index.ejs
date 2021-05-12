@@ -33,7 +33,7 @@
                 <%     var countryCode=countryNames[count].code%> 
                 <%     count++; %>
                 <div class="column" id="afghansiatan"  onclick="location.href='./country?name=<%= countryName %> '">
-                    <img src="/public/img/flags/<%= countryCode %>.png" alt="" >
+                    <img src="./img/flags/<%= countryCode %>.png" alt="" >
                 </div>
                 <% } %>  
             </div>
@@ -42,7 +42,7 @@
     </section>
     <section id="globe-section">
         <div id="globe-container">
-            <script src="/public/js/p5js/sketches/globe.js"></script>
+            <script src="./js/p5js/sketches/globe.js"></script>
         </div>
     </section>
     <footer>
